@@ -1,0 +1,231 @@
+{
+  "app": {
+    "name": "SCor",
+    "slogan": "Welcome"
+  },
+  "tabs": {
+    "tab1": "Process",
+    "tab2": "Performance",
+    "tab3": "Practices",
+    "tab4": "People"
+  },
+  "menu": {
+    "title": "Menu",
+    "home": "Home",
+    "settings": "Settings",
+    "about": "About"
+  },
+  "search": {
+    "placeholder": "Search..."
+  },
+  "common": {
+    "welcome": "Welcome to SCor",
+    "logout": "Logout",
+    "login": "Login",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close"
+  },
+  "process": {
+    "plan": "Plan",
+    "source": "Source",
+    "make": "Make",
+    "deliver": "Deliver",
+    "return": "Return",
+    "enable": "Enable"
+  },
+  "plan": {
+    "infoBody": "Information placeholder. Add details for {{title}}.",
+    "items": {
+      "sP1": { "title": "Plan Supply Chain" },
+      "sP2": { "title": "Plan Source" },
+      "sP3": { "title": "Plan Make" },
+      "sP4": { "title": "Plan Deliver" },
+      "sP5": { "title": "Plan Return" }
+    },
+    "subItems": {
+      "sP1.1": { "title": "Align Plans", "description": "Identify, Prioritize and Aggregate Supply Chain Requirements" },
+      "sP1.2": { "title": "Balance Demand", "description": "Identify, Prioritize and Aggregate Supply Chain Resources" },
+      "sP1.3": { "title": "Integrate Systems", "description": "Balance Supply Chain Resources with SC Requirements" },
+      "sP1.4": { "title": "Monitor Performance", "description": "Establish and Communicate Supply Chain Plans." },
+      "sP2.1": { "title": "Source Strategy", "description": "Identify, Prioritize and Aggregate Supply Products Requirements" },
+      "sP2.2": { "title": "Supplier Selection", "description": "Identify, Prioritize and Aggregate Product Resources" },
+      "sP2.3": { "title": "Contract Management", "description": "Balance Product Resources with Product Requirements." },
+      "sP2.4": { "title": "Risk Assessment", "description": "Establish Sourcing Plans" },
+      "sP3.1": { "title": "Capacity Planning", "description": "Identify, Prioritize and Aggregate Product Requirements" },
+      "sP3.2": { "title": "Scheduling", "description": "Identify, Prioritize and Aggregate Production Resources" },
+      "sP3.3": { "title": "Resource Allocation", "description": "Balance Product Resources with Product Requirements." },
+      "sP3.4": { "title": "Quality Planning", "description": "Establish Production Plans" },
+      "sP4.1": { "title": "Logistics Plan", "description": "Identify, Prioritize and Aggregate Delivery Requirements" },
+      "sP4.2": { "title": "Distribution Model", "description": "Identify, Assess and Aggregate Delivery Resources" },
+      "sP4.3": { "title": "Carrier Selection", "description": "Balance Delivery Resources and Capabilities with Delivery Requirements." },
+      "sP4.4": { "title": "Route Optimization", "description": "Establish Delivery Plans" },
+      "sP5.1": { "title": "Return Policy", "description": "Assess and aggregate Return Requirements" },
+      "sP5.2": { "title": "Reverse Logistics", "description": "Identify, Assess and Aggregate Return Resources" },
+      "sP5.3": { "title": "Inspection & Disposition", "description": "Balance Return Resources with Return Requirements" },
+      "sP5.4": { "title": "Recycling & Recovery", "description": "Establish and Communicate Return Plans" }
+    }
+  },
+  "source": {
+    "infoBody": "Information placeholder. Add details for {{title}}.",
+    "items": {
+      "sS1": { "title": "Source Strategy" },
+      "sS2": { "title": "Source Execution" },
+      "sS3": { "title": "Supplier Collaboration" },
+      "sS4": { "title": "Inventory Planning" },
+      "sS5": { "title": "Quality & Compliance" }
+    },
+    "subItems": {
+      "sS1.1": { "title": "Policies", "description": "Define sourcing policies and guardrails." },
+      "sS1.2": { "title": "Risk Map", "description": "Map vendor risks and mitigations." },
+      "sS1.3": { "title": "Category Strategy", "description": "Develop category strategies." },
+      "sS1.4": { "title": "Should-Cost", "description": "Run should-cost and TCO analysis." },
+      "sS2.1": { "title": "RFQ Pipeline", "description": "Build RFQ and RFP pipeline." },
+      "sS2.2": { "title": "Onboarding", "description": "Onboard suppliers and master data." },
+      "sS2.3": { "title": "Contracts", "description": "Manage contract lifecycle." },
+      "sS2.4": { "title": "Compliance", "description": "Run compliance and audit checks." },
+      "sS3.1": { "title": "Cadence", "description": "Schedule supplier collaboration cadences." },
+      "sS3.2": { "title": "Forecast Share", "description": "Share forecasts and commitments." },
+      "sS3.3": { "title": "Performance", "description": "Track supplier performance KPIs." },
+      "sS3.4": { "title": "Improvements", "description": "Run improvement plans jointly." },
+      "sS4.1": { "title": "Targets", "description": "Set inventory targets by location." },
+      "sS4.2": { "title": "Reorder Rules", "description": "Define reorder and safety stock rules." },
+      "sS4.3": { "title": "Parameters", "description": "Align replenishment parameters." },
+      "sS4.4": { "title": "Visibility", "description": "Provide inventory visibility across network." },
+      "sS5.1": { "title": "Incoming Quality", "description": "Plan incoming quality inspections." },
+      "sS5.2": { "title": "Certificates", "description": "Manage certificates and specs." },
+      "sS5.3": { "title": "Claims", "description": "Handle supplier claims and escapes." },
+      "sS5.4": { "title": "Sustainability", "description": "Report sustainability and compliance." }
+    }
+  },
+  "make": {
+    "infoBody": "Information placeholder. Add details for {{title}}.",
+    "items": {
+      "sM1": { "title": "Production Planning" },
+      "sM2": { "title": "Shop Floor Control" },
+      "sM3": { "title": "Quality Management" },
+      "sM4": { "title": "Maintenance Planning" },
+      "sM5": { "title": "Cost Optimization" }
+    },
+    "subItems": {
+      "sM1.1": { "title": "Translate Demand", "description": "Translate demand to production plans." },
+      "sM1.2": { "title": "Sequence", "description": "Sequence batches and lots." },
+      "sM1.3": { "title": "Simulate Capacity", "description": "Simulate capacity constraints." },
+      "sM1.4": { "title": "Material Check", "description": "Align plan with material availability." },
+      "sM2.1": { "title": "Dispatch", "description": "Dispatch work orders to lines." },
+      "sM2.2": { "title": "Track WIP", "description": "Track WIP and labor in real time." },
+      "sM2.3": { "title": "Manage Exceptions", "description": "Manage exceptions on the shop floor." },
+      "sM2.4": { "title": "Confirmations", "description": "Record production confirmations." },
+      "sM3.1": { "title": "Quality Plan", "description": "Define quality plans and control points." },
+      "sM3.2": { "title": "NC & CAPA", "description": "Manage non-conformances and CAPA." },
+      "sM3.3": { "title": "Calibration", "description": "Calibrate and monitor test equipment." },
+      "sM3.4": { "title": "Defect Analysis", "description": "Analyze defects and trends." },
+      "sM4.1": { "title": "Preventive", "description": "Plan preventive maintenance windows." },
+      "sM4.2": { "title": "Scheduling", "description": "Schedule technicians and parts." },
+      "sM4.3": { "title": "Asset Health", "description": "Track asset health and downtime." },
+      "sM4.4": { "title": "Backlog", "description": "Optimize maintenance backlog." },
+      "sM5.1": { "title": "Cost Drivers", "description": "Track production cost drivers." },
+      "sM5.2": { "title": "Yield", "description": "Improve yield and scrap rates." },
+      "sM5.3": { "title": "Changeovers", "description": "Optimize changeover times." },
+      "sM5.4": { "title": "Benchmark", "description": "Benchmark cost to serve." }
+    }
+  },
+  "deliver": {
+    "infoBody": "Information placeholder. Add details for {{title}}.",
+    "items": {
+      "sD1": { "title": "Order Management" },
+      "sD2": { "title": "Warehouse Operations" },
+      "sD3": { "title": "Transportation" },
+      "sD4": { "title": "Customer Service" },
+      "sD5": { "title": "Last Mile" }
+    },
+    "subItems": {
+      "sD1.1": { "title": "Capture", "description": "Capture and validate orders." },
+      "sD1.2": { "title": "Promise", "description": "Promise dates with ATP/CTP." },
+      "sD1.3": { "title": "Changes", "description": "Manage order changes." },
+      "sD1.4": { "title": "Orchestration", "description": "Orchestrate fulfillment paths." },
+      "sD2.1": { "title": "Waves", "description": "Plan warehouse waves and picks." },
+      "sD2.2": { "title": "Slotting", "description": "Optimize slotting and storage." },
+      "sD2.3": { "title": "Packing", "description": "Manage packing and kitting." },
+      "sD2.4": { "title": "Accuracy", "description": "Track inventory accuracy." },
+      "sD3.1": { "title": "Capacity", "description": "Plan transportation capacity." },
+      "sD3.2": { "title": "Tender", "description": "Tender and book shipments." },
+      "sD3.3": { "title": "Track", "description": "Track and trace deliveries." },
+      "sD3.4": { "title": "Freight Cost", "description": "Manage freight costs." },
+      "sD4.1": { "title": "Comms", "description": "Provide customer communications." },
+      "sD4.2": { "title": "Exceptions", "description": "Handle delivery exceptions." },
+      "sD4.3": { "title": "POD", "description": "Manage proof of delivery." },
+      "sD4.4": { "title": "Feedback", "description": "Capture service feedback." },
+      "sD5.1": { "title": "Experience", "description": "Plan last-mile experience." },
+      "sD5.2": { "title": "Routing", "description": "Optimize routes dynamically." },
+      "sD5.3": { "title": "Carrier Coordination", "description": "Coordinate with carriers." },
+      "sD5.4": { "title": "OTIF", "description": "Measure on-time in-full." }
+    }
+  },
+  "return": {
+    "infoBody": "Information placeholder. Add details for {{title}}.",
+    "items": {
+      "sR1": { "title": "Return Intake" },
+      "sR2": { "title": "Inspection" },
+      "sR3": { "title": "Disposition" },
+      "sR4": { "title": "Credit & Refund" },
+      "sR5": { "title": "Reporting" }
+    },
+    "subItems": {
+      "sR1.1": { "title": "Requests", "description": "Receive return requests and RMAs." },
+      "sR1.2": { "title": "Authorization", "description": "Authorize return conditions." },
+      "sR1.3": { "title": "Instructions", "description": "Provide return labels and instructions." },
+      "sR1.4": { "title": "Logistics", "description": "Schedule pickups or drop-offs." },
+      "sR2.1": { "title": "Visual", "description": "Inspect returned items." },
+      "sR2.2": { "title": "Functional", "description": "Test functionality where needed." },
+      "sR2.3": { "title": "Classify", "description": "Classify defects and causes." },
+      "sR2.4": { "title": "Record", "description": "Record disposition decisions." },
+      "sR3.1": { "title": "Repair", "description": "Route items to repair." },
+      "sR3.2": { "title": "Refurbish", "description": "Send items to refurbish or reman." },
+      "sR3.3": { "title": "Recycle", "description": "Recycle or scrap appropriately." },
+      "sR3.4": { "title": "Restock", "description": "Restock eligible items." },
+      "sR4.1": { "title": "Credits", "description": "Process credits or replacements." },
+      "sR4.2": { "title": "Refunds", "description": "Handle refunds and payments." },
+      "sR4.3": { "title": "Notify", "description": "Update customer notifications." },
+      "sR4.4": { "title": "Reconcile", "description": "Reconcile accounting entries." },
+      "sR5.1": { "title": "KPIs", "description": "Report return rates and reasons." },
+      "sR5.2": { "title": "Warranty", "description": "Monitor warranty performance." },
+      "sR5.3": { "title": "Root Causes", "description": "Identify systemic issues." },
+      "sR5.4": { "title": "Prevention", "description": "Drive prevention actions." }
+    }
+  },
+  "enable": {
+    "infoBody": "Information placeholder. Add details for {{title}}.",
+    "items": {
+      "sE1": { "title": "Data & Analytics" },
+      "sE2": { "title": "Technology" },
+      "sE3": { "title": "People & Training" },
+      "sE4": { "title": "Policy & Governance" },
+      "sE5": { "title": "Continuous Improvement" }
+    },
+    "subItems": {
+      "sE1.1": { "title": "Data Model", "description": "Consolidate data sources and models." },
+      "sE1.2": { "title": "Dashboards", "description": "Define dashboards and KPIs." },
+      "sE1.3": { "title": "Alerts", "description": "Enable alerts and thresholds." },
+      "sE1.4": { "title": "Data Quality", "description": "Industrialize data quality." },
+      "sE2.1": { "title": "Assess", "description": "Assess current tools and gaps." },
+      "sE2.2": { "title": "Design", "description": "Design architecture and integrations." },
+      "sE2.3": { "title": "Releases", "description": "Manage releases and rollouts." },
+      "sE2.4": { "title": "Security", "description": "Ensure security and access." },
+      "sE3.1": { "title": "Roles", "description": "Define roles and responsibilities." },
+      "sE3.2": { "title": "Training", "description": "Create training plans." },
+      "sE3.3": { "title": "Change", "description": "Run change management." },
+      "sE3.4": { "title": "Coaching", "description": "Support teams with coaching." },
+      "sE4.1": { "title": "Policies", "description": "Establish policies and standards." },
+      "sE4.2": { "title": "Compliance", "description": "Set compliance and controls." },
+      "sE4.3": { "title": "Audit", "description": "Audit process adherence." },
+      "sE4.4": { "title": "Risk", "description": "Manage risk and approvals." },
+      "sE5.1": { "title": "Lessons", "description": "Capture lessons learned." },
+      "sE5.2": { "title": "Backlog", "description": "Prioritize improvement backlog." },
+      "sE5.3": { "title": "Pilots", "description": "Run pilots and experiments." },
+      "sE5.4": { "title": "Scale", "description": "Scale successful practices." }
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "app": {
+    "name": "SCor",
+    "slogan": "Bienvenue"
+  },
+  "tabs": {
+    "tab1": "Process",
+    "tab2": "Performance",
+    "tab3": "Practices",
+    "tab4": "People"
+  },
+  "menu": {
+    "title": "Menu",
+    "home": "Accueil",
+    "settings": "Paramètres",
+    "about": "À propos"
+  },
+  "search": {
+    "placeholder": "Rechercher..."
+  },
+  "common": {
+    "welcome": "Bienvenue dans SCor",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer"
+  },
+  "process": {
+    "plan": "Plan",
+    "source": "Source",
+    "make": "Make",
+    "deliver": "Deliver",
+    "return": "Return",
+    "enable": "Enable"
+  },
+  "plan": {
+    "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "items": {
+      "sP1": { "title": "Planifier la supply chain" },
+      "sP2": { "title": "Planifier le sourcing" },
+      "sP3": { "title": "Planifier la production" },
+      "sP4": { "title": "Planifier la distribution" },
+      "sP5": { "title": "Planifier les retours" }
+    },
+    "subItems": {
+      "sP1.1": { "title": "Aligner les plans", "description": "Coordonner la planification entre fonctions et partenaires." },
+      "sP1.2": {
+        "title": "Équilibrer la demande",
+        "description": "Identifier, prioriser et agréger les ressources de la chaîne logistique."
+      },
+      "sP1.3": {
+        "title": "Intégrer les systèmes",
+        "description": "Équilibrer les ressources de la chaîne logistique avec les exigences SC."
+      },
+      "sP1.4": { "title": "Suivre la performance", "description": "Établir et communiquer les plans de chaîne logistique." },
+      "sP2.1": {
+        "title": "Stratégie d'appro",
+        "description": "Identifier, prioriser et agréger les exigences d'approvisionnement des produits."
+      },
+      "sP2.2": { "title": "Sélection fournisseurs", "description": "Identifier, prioriser et agréger les ressources produits." },
+      "sP2.3": { "title": "Contrats", "description": "Équilibrer les ressources produits avec les exigences produits." },
+      "sP2.4": { "title": "Risques", "description": "Établir les plans de sourcing." },
+      "sP3.1": { "title": "Capacité", "description": "Identifier, prioriser et agréger les exigences produit." },
+      "sP3.2": { "title": "Ordonnancement", "description": "Identifier, prioriser et agréger les ressources de production." },
+      "sP3.3": { "title": "Ressources", "description": "Équilibrer les ressources produit avec les exigences produit." },
+      "sP3.4": { "title": "Qualité", "description": "Établir les plans de production." },
+      "sP4.1": { "title": "Logistique", "description": "Identifier, prioriser et agréger les exigences de livraison." },
+      "sP4.2": { "title": "Distribution", "description": "Identifier, évaluer et agréger les ressources de livraison." },
+      "sP4.3": {
+        "title": "Transporteurs",
+        "description": "Équilibrer ressources et capacités de livraison avec les exigences de livraison."
+      },
+      "sP4.4": { "title": "Routes", "description": "Établir les plans de livraison." },
+      "sP5.1": { "title": "Politique de retour", "description": "Évaluer et agréger les exigences de retour." },
+      "sP5.2": { "title": "Reverse logistique", "description": "Identifier, évaluer et agréger les ressources de retour." },
+      "sP5.3": { "title": "Inspection & sort", "description": "Équilibrer les ressources de retour avec les exigences de retour." },
+      "sP5.4": { "title": "Valorisation", "description": "Établir et communiquer les plans de retour." }
+    }
+  },
+  "source": {
+    "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "items": {
+      "sS1": { "title": "Stratégie sourcing" },
+      "sS2": { "title": "Exécution sourcing" },
+      "sS3": { "title": "Collaboration fournisseurs" },
+      "sS4": { "title": "Planification inventaire" },
+      "sS5": { "title": "Qualité & conformité" }
+    },
+    "subItems": {
+      "sS1.1": { "title": "Politiques", "description": "Définir les politiques et garde-fous de sourcing." },
+      "sS1.2": { "title": "Risques", "description": "Cartographier les risques fournisseurs et plans de mitigation." },
+      "sS1.3": { "title": "Catégories", "description": "Élaborer les stratégies par catégorie." },
+      "sS1.4": { "title": "Coût objectif", "description": "Faire des analyses de coût complet et TCO." },
+      "sS2.1": { "title": "Pipeline RFQ", "description": "Construire le pipeline RFQ/RFP." },
+      "sS2.2": { "title": "Onboarding", "description": "Onboarder les fournisseurs et les données de base." },
+      "sS2.3": { "title": "Contrats", "description": "Gérer le cycle de vie des contrats." },
+      "sS2.4": { "title": "Conformité", "description": "Exécuter les contrôles de conformité et d'audit." },
+      "sS3.1": { "title": "Cadence", "description": "Planifier les points de collaboration fournisseurs." },
+      "sS3.2": { "title": "Prévisions", "description": "Partager prévisions et engagements." },
+      "sS3.3": { "title": "Performance", "description": "Suivre les KPIs fournisseurs." },
+      "sS3.4": { "title": "Amélioration", "description": "Piloter des plans d'amélioration communs." },
+      "sS4.1": { "title": "Cibles", "description": "Fixer les cibles de stock par site." },
+      "sS4.2": { "title": "Règles", "description": "Définir règles de réappro et de stock de sécurité." },
+      "sS4.3": { "title": "Paramètres", "description": "Aligner les paramètres de réapprovisionnement." },
+      "sS4.4": { "title": "Visibilité", "description": "Donner la visibilité stock sur le réseau." },
+      "sS5.1": { "title": "Qualité entrante", "description": "Planifier les contrôles qualité entrants." },
+      "sS5.2": { "title": "Certificats", "description": "Gérer certificats et spécifications." },
+      "sS5.3": { "title": "Réclamations", "description": "Traiter réclamations et dérives fournisseurs." },
+      "sS5.4": { "title": "Durabilité", "description": "Reporter durabilité et conformité." }
+    }
+  },
+  "make": {
+    "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "items": {
+      "sM1": { "title": "Planification production" },
+      "sM2": { "title": "Pilotage atelier" },
+      "sM3": { "title": "Qualité" },
+      "sM4": { "title": "Maintenance" },
+      "sM5": { "title": "Optimisation coûts" }
+    },
+    "subItems": {
+      "sM1.1": { "title": "Traduire la demande", "description": "Traduire la demande en plans de production." },
+      "sM1.2": { "title": "Séquençage", "description": "Séquencer lots et ordres." },
+      "sM1.3": { "title": "Capacité", "description": "Simuler les contraintes de capacité." },
+      "sM1.4": { "title": "Disponibilité", "description": "Aligner le plan avec la disponibilité matière." },
+      "sM2.1": { "title": "Lancement", "description": "Lancer les ordres vers les lignes." },
+      "sM2.2": { "title": "Suivi TRS", "description": "Suivre le WIP et la main d'œuvre en temps réel." },
+      "sM2.3": { "title": "Exceptions", "description": "Gérer les exceptions en atelier." },
+      "sM2.4": { "title": "Comptes-rendus", "description": "Enregistrer les confirmations de production." },
+      "sM3.1": { "title": "Plan qualité", "description": "Définir plans qualité et points de contrôle." },
+      "sM3.2": { "title": "NC & CAPA", "description": "Gérer non-conformités et CAPA." },
+      "sM3.3": { "title": "Étalonnage", "description": "Étalonner et suivre les équipements de test." },
+      "sM3.4": { "title": "Analyse défauts", "description": "Analyser défauts et tendances." },
+      "sM4.1": { "title": "Préventif", "description": "Planifier les maintenances préventives." },
+      "sM4.2": { "title": "Planning", "description": "Planifier techniciens et pièces." },
+      "sM4.3": { "title": "Santé actifs", "description": "Suivre la santé des actifs et les arrêts." },
+      "sM4.4": { "title": "Backlog", "description": "Optimiser le backlog maintenance." },
+      "sM5.1": { "title": "Coûts", "description": "Suivre les inducteurs de coûts de production." },
+      "sM5.2": { "title": "Rendement", "description": "Améliorer rendement et rebuts." },
+      "sM5.3": { "title": "Changeovers", "description": "Optimiser les temps de changement de série." },
+      "sM5.4": { "title": "Benchmark", "description": "Benchmark du coût de service." }
+    }
+  },
+  "deliver": {
+    "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "items": {
+      "sD1": { "title": "Gestion des commandes" },
+      "sD2": { "title": "Opérations entrepôt" },
+      "sD3": { "title": "Transport" },
+      "sD4": { "title": "Service client" },
+      "sD5": { "title": "Dernier kilomètre" }
+    },
+    "subItems": {
+      "sD1.1": { "title": "Capture", "description": "Capturer et valider les commandes." },
+      "sD1.2": { "title": "Promesse", "description": "Promettre les dates avec ATP/CTP." },
+      "sD1.3": { "title": "Changements", "description": "Gérer les modifications de commandes." },
+      "sD1.4": { "title": "Orchestration", "description": "Orchestrer les chemins de fulfillment." },
+      "sD2.1": { "title": "Vagues", "description": "Planifier les vagues et préparations." },
+      "sD2.2": { "title": "Slotting", "description": "Optimiser le slotting et le stockage." },
+      "sD2.3": { "title": "Packing", "description": "Gérer packing et kitting." },
+      "sD2.4": { "title": "Exactitude", "description": "Suivre l'exactitude inventaire." },
+      "sD3.1": { "title": "Capacité", "description": "Planifier la capacité transport." },
+      "sD3.2": { "title": "Tender", "description": "Négocier et réserver les expéditions." },
+      "sD3.3": { "title": "Tracking", "description": "Suivre et tracer les livraisons." },
+      "sD3.4": { "title": "Coût", "description": "Gérer les coûts de fret." },
+      "sD4.1": { "title": "Comms", "description": "Fournir les communications clients." },
+      "sD4.2": { "title": "Exceptions", "description": "Traiter les exceptions de livraison." },
+      "sD4.3": { "title": "POD", "description": "Gérer la preuve de livraison." },
+      "sD4.4": { "title": "Feedback", "description": "Recueillir le feedback service." },
+      "sD5.1": { "title": "Expérience", "description": "Concevoir l'expérience dernier km." },
+      "sD5.2": { "title": "Routes", "description": "Optimiser les routes dynamiquement." },
+      "sD5.3": { "title": "Coordination", "description": "Coordonner avec les transporteurs." },
+      "sD5.4": { "title": "OTIF", "description": "Mesurer l'OTIF." }
+    }
+  },
+  "return": {
+    "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "items": {
+      "sR1": { "title": "Prise en charge retours" },
+      "sR2": { "title": "Inspection" },
+      "sR3": { "title": "Sort final" },
+      "sR4": { "title": "Crédit & remboursement" },
+      "sR5": { "title": "Reporting" }
+    },
+    "subItems": {
+      "sR1.1": { "title": "Demandes", "description": "Recevoir les demandes et RMAs." },
+      "sR1.2": { "title": "Autorisation", "description": "Autoriser les conditions de retour." },
+      "sR1.3": { "title": "Instructions", "description": "Fournir étiquettes et instructions." },
+      "sR1.4": { "title": "Logistique", "description": "Planifier collecte ou dépôt." },
+      "sR2.1": { "title": "Visuel", "description": "Inspecter les articles retournés." },
+      "sR2.2": { "title": "Fonctionnel", "description": "Tester le fonctionnement si besoin." },
+      "sR2.3": { "title": "Classification", "description": "Classer défauts et causes." },
+      "sR2.4": { "title": "Enregistrement", "description": "Enregistrer la décision de sort." },
+      "sR3.1": { "title": "Réparation", "description": "Orienter vers la réparation." },
+      "sR3.2": { "title": "Reconditionnement", "description": "Envoyer au reconditionnement ou reman." },
+      "sR3.3": { "title": "Recyclage", "description": "Recycler ou mettre au rebut correctement." },
+      "sR3.4": { "title": "Remise en stock", "description": "Remettre en stock les éligibles." },
+      "sR4.1": { "title": "Crédits", "description": "Traiter crédits ou remplacements." },
+      "sR4.2": { "title": "Remboursements", "description": "Gérer remboursements et paiements." },
+      "sR4.3": { "title": "Notification", "description": "Mettre à jour les notifications client." },
+      "sR4.4": { "title": "Comptabilité", "description": "Rapprocher les écritures comptables." },
+      "sR5.1": { "title": "KPIs", "description": "Suivre taux et motifs de retour." },
+      "sR5.2": { "title": "Garantie", "description": "Suivre la performance garantie." },
+      "sR5.3": { "title": "Racines", "description": "Identifier les causes systémiques." },
+      "sR5.4": { "title": "Prévention", "description": "Porter les actions de prévention." }
+    }
+  },
+  "enable": {
+    "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "items": {
+      "sE1": { "title": "Données & analytique" },
+      "sE2": { "title": "Technologie" },
+      "sE3": { "title": "People & formation" },
+      "sE4": { "title": "Politique & gouvernance" },
+      "sE5": { "title": "Amélioration continue" }
+    },
+    "subItems": {
+      "sE1.1": { "title": "Modèle de données", "description": "Consolider sources et modèles de données." },
+      "sE1.2": { "title": "Tableaux de bord", "description": "Définir dashboards et KPIs." },
+      "sE1.3": { "title": "Alertes", "description": "Mettre en place alertes et seuils." },
+      "sE1.4": { "title": "Qualité données", "description": "Industrialiser la qualité des données." },
+      "sE2.1": { "title": "Évaluation", "description": "Évaluer outils en place et écarts." },
+      "sE2.2": { "title": "Architecture", "description": "Concevoir architecture et intégrations." },
+      "sE2.3": { "title": "Mises en prod", "description": "Gérer releases et déploiements." },
+      "sE2.4": { "title": "Sécurité", "description": "Assurer sécurité et accès." },
+      "sE3.1": { "title": "Rôles", "description": "Définir rôles et responsabilités." },
+      "sE3.2": { "title": "Formation", "description": "Construire plans de formation." },
+      "sE3.3": { "title": "Change", "description": "Piloter le change management." },
+      "sE3.4": { "title": "Coaching", "description": "Accompagner les équipes au quotidien." },
+      "sE4.1": { "title": "Politiques", "description": "Établir politiques et standards." },
+      "sE4.2": { "title": "Conformité", "description": "Poser contrôles et conformité." },
+      "sE4.3": { "title": "Audit", "description": "Auditer l'adhérence aux processus." },
+      "sE4.4": { "title": "Risque", "description": "Gérer risques et validations." },
+      "sE5.1": { "title": "Retours d'expérience", "description": "Capturer les enseignements." },
+      "sE5.2": { "title": "Backlog", "description": "Prioriser le backlog d'amélioration." },
+      "sE5.3": { "title": "Pilotes", "description": "Lancer pilotes et expérimentations." },
+      "sE5.4": { "title": "Industrialisation", "description": "Industrialiser les pratiques qui marchent." }
+    }
+  }
+}
