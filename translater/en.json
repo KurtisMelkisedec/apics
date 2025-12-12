@@ -36,6 +36,13 @@
     "return": "Return",
     "enable": "Enable"
   },
+  "performance": {
+    "reliability": "Reliability",
+    "responsiveness": "Responsiveness",
+    "agility": "Agility",
+    "cost": "Cost",
+    "assetManagement": "Asset Management"
+  },
   "plan": {
     "infoBody": "Information placeholder. Add details for {{title}}.",
     "items": {
