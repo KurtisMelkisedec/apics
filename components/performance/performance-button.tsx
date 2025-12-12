@@ -2,11 +2,12 @@ import { Pressable, StyleSheet, Text } from 'react-native';
 
 interface PerformanceButtonProps {
   title: string;
-  route: string;
+  route: string; // TODO: Will be used for navigation when performance detail routes are implemented
 }
 
 export function PerformanceButton({ title, route }: PerformanceButtonProps) {
   const handlePress = () => {
+    // TODO: Replace with router.push(route) when detail routes are implemented
     console.log(`Navigation to ${route} - route will be implemented later`);
   };
 
