@@ -1,4 +1,3 @@
-import { useRouter } from 'expo-router';
 import { Pressable, StyleSheet, Text } from 'react-native';
 
 interface PerformanceButtonProps {
@@ -7,10 +6,12 @@ interface PerformanceButtonProps {
 }
 
 export function PerformanceButton({ title, route }: PerformanceButtonProps) {
-  const router = useRouter();
+  const handlePress = () => {
+    console.log(`Navigation to ${route} - route will be implemented later`);
+  };
 
   return (
-    <Pressable style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]} onPress={() => router.push(route as any)}>
+    <Pressable style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]} onPress={handlePress}>
       <Text style={styles.buttonText}>{title}</Text>
     </Pressable>
   );
