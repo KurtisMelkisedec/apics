@@ -1,16 +1,17 @@
-import { Tabs } from 'expo-router';
+import { Tabs, useRouter } from 'expo-router';
 import React, { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Modal, Pressable, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { DrawerMenu } from '@/components/drawer/drawer-menu';
-import { IconSymbol } from '@/components/ui/icon-symbol';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { Globe, Menu, Search } from 'lucide-react-native';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
   const insets = useSafeAreaInsets();
+  const router = useRouter();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const toggleLanguage = useCallback(() => {
@@ -41,7 +42,7 @@ export default function TabLayout() {
       >
         {/* Menu Button */}
         <Pressable onPress={() => setDrawerOpen(true)} hitSlop={8}>
-          <IconSymbol size={28} name="line.3.horizontal" color={headerTextColor} />
+          <Menu size={28} color={headerTextColor} />
         </Pressable>
 
         {/* App Name */}
@@ -57,11 +58,11 @@ export default function TabLayout() {
 
         {/* Right Actions: Search + Language */}
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
-          <Pressable hitSlop={8}>
-            <IconSymbol size={24} name="magnifyingglass" color={headerTextColor} />
+          <Pressable onPress={() => router.push('/search')} hitSlop={8}>
+            <Search size={24} color={headerTextColor} />
           </Pressable>
           <Pressable onPress={toggleLanguage} hitSlop={8} style={{ flexDirection: 'row', alignItems: 'center' }}>
-            <IconSymbol size={22} name="globe" color={headerTextColor} />
+            <Globe size={22} color={headerTextColor} />
             <Text style={{ color: headerTextColor, marginLeft: 6, fontWeight: '600' }}>
               {i18n.language?.toUpperCase() === 'FR' ? 'FR' : i18n.language?.toUpperCase() === 'EN' ? 'EN' : i18n.language?.toUpperCase()}
             </Text>

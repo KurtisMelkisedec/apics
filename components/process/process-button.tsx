@@ -11,7 +11,9 @@ export function ProcessButton({ title, route }: ProcessButtonProps) {
 
   return (
     <Pressable style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]} onPress={() => router.push(route as any)}>
-      <Text style={styles.buttonText}>{title}</Text>
+      <Text style={styles.buttonText} numberOfLines={2} ellipsizeMode="tail">
+        {title}
+      </Text>
     </Pressable>
   );
 }
@@ -43,5 +45,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '600',
     textAlign: 'center',
+    paddingHorizontal: 8,
+    flexShrink: 1,
   },
 });

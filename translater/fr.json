@@ -16,7 +16,14 @@
     "about": "À propos"
   },
   "search": {
-    "placeholder": "Rechercher..."
+    "title": "Recherche",
+    "placeholder": "Mots-clés"
+  },
+  "footer": {
+    "about": "À propos",
+    "contact": "Contact",
+    "join": "Rejoindre",
+    "privacy": "Confidentialité"
   },
   "common": {
     "welcome": "Bienvenue dans SCor",
@@ -29,15 +36,105 @@
     "close": "Fermer"
   },
   "process": {
-    "plan": "Plan",
-    "source": "Source",
-    "make": "Make",
-    "deliver": "Deliver",
-    "return": "Return",
-    "enable": "Enable"
+    "plan": "Planifier",
+    "source": "Approvisionner",
+    "make": "Fabriquer",
+    "deliver": "Livrer",
+    "return": "Retourner",
+    "enable": "Activer"
+  },
+  "people": {
+    "skill": "Compétences",
+    "experience": "Expérience",
+    "training": "Entrainement",
+    "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "skillItems": {
+      "HS_002": { "title": "Tests d'Acceptation" },
+      "HS_003": { "title": "Comptabilité" },
+      "HS_004": { "title": "Méthodologies Publicitaires" },
+      "HS_005": { "title": "Conception de Processus d'Assemblage" },
+      "HS_006": { "title": "Gestion des Actifs" },
+      "HS_007": { "title": "Gestion de la Disponibilité" },
+      "HS_009": { "title": "Gestion Code-barres/RFID (si disponible)" },
+      "HS_0012": { "title": "Benchmarking" },
+      "HS_0015": { "title": "CAD/CAM" },
+      "HS_0016": { "title": "Planification/Gestion de la Capacité" },
+      "HS_0018": { "title": "Sélection de Transporteurs" },
+      "HS_0139": { "title": "Appels d'Offres Compétitifs" },
+      "HS_0022": { "title": "Gestion des Contrats" },
+      "HS_0025": { "title": "Gestion des Règles/Politiques Métier" },
+      "HS_0028": { "title": "Gestion des Commandes Client" },
+      "HS_0029": { "title": "Gestion de la Relation Client (CRM)" },
+      "HS_0032": { "title": "Communication Client/Fournisseur" },
+      "HS_0124": { "title": "Gestion et Analytique des Données" },
+      "HS_0036": { "title": "Planification des Livraisons" },
+      "HS_0037": { "title": "Gestion de la Demande" },
+      "HS_0069": { "title": "Gestion Logistique" },
+      "HS_0094": { "title": "Approvisionnement" },
+      "HS_0108": { "title": "Gestion de la Qualité" },
+      "HS_0121": { "title": "Développement de Stratégie de Retours" },
+      "HS_0124b": { "title": "Gestion des Risques et Exceptions" },
+      "HS_0139b": { "title": "Gestion de la Relation Fournisseur (SRM)" },
+      "HS_0144": { "title": "Sécurité de la Supply Chain" },
+      "HS_0165": { "title": "Gestion du Changement" }
+    },
+    "experienceItems": {
+      "HE_0009": { "title": "Code-barres/RFID" },
+      "HE_0010": { "title": "Finance de Base" },
+      "HE_0108": { "title": "Stratégie de Couverture des Prix du Carburant" },
+      "HE_0162": { "title": "Techniques de Modélisation" },
+      "HE_0205": { "title": "Gestion de Projet" },
+      "HE_0224": { "title": "Gestion des Risques" },
+      "HE_0251": { "title": "Modélisation/Analyse Statistique" },
+      "HE_0265": { "title": "Accords de Stratégie de Service Fournisseur" },
+      "HE_0269": { "title": "Gestion de la Performance/Métriques Supply Chain" },
+      "HE_0303": { "title": "Système d'Évaluation des Fournisseurs" },
+      "HE_0304": { "title": "Gestion Entrepôt/Distribution" },
+      "HE_0305": { "title": "Durée de Vie Min/Max en Entrepôt" },
+      "HE_0306": { "title": "Procédure d'Élimination des Déchets" },
+      "HE_0307": { "title": "Water Spider" },
+      "HE_0308": { "title": "Méthodologie WIP" },
+      "HE_0309": { "title": "Reporting WIP" }
+    },
+    "trainingItems": {
+      "HT_0001": { "title": "Principes Comptables Avancés" },
+      "HT_0002": { "title": "Techniques Excel Avancées" },
+      "HT_0003": { "title": "Négociations Avancées/Planification Collaborative" },
+      "HT_0004": { "title": "Méthodologies Publicitaires" },
+      "HT_0005": { "title": "Construction d'Accords/Exigences Légales" },
+      "HT_0006": { "title": "APICS CPIM - Certifié en Gestion de la Production et des Stocks" },
+      "HT_0007": { "title": "APICS CSCP – Professionnel Certifié de la Chaîne d'Approvisionnement" },
+      "HT_0017": { "title": "Modèle Économique et Canal de Vente" },
+      "HT_0027": { "title": "Résolution de Conflits" },
+      "HT_0034": { "title": "CPFR" },
+      "HT_0037": { "title": "APICS CLTD – Certifié en Logistique, Transport et Distribution" },
+      "HT_0060": { "title": "Techniques de Prévision" },
+      "HT_0066": { "title": "Ingénierie des Systèmes Verts" },
+      "HT_0067": { "title": "Certification IBF" },
+      "HT_0070": { "title": "Certification Réglementaire Spécifique à l'Industrie" },
+      "HT_0080": { "title": "Certification ISO" },
+      "HT_0102": { "title": "Compétences de Négociation" },
+      "HT_0122": { "title": "Formation S&OP (Oliver Wight, Tom Wallace ou équivalent)" },
+      "HT_0127": { "title": "Certification SCOR-P" },
+      "HT_0128": { "title": "SCORmark" },
+      "HT_0133": { "title": "Six Sigma Greenbelt" },
+      "HT_0157": { "title": "APICS Principes de Distribution et Logistique" },
+      "HT_0158": { "title": "APICS Principes de Gestion des Stocks" },
+      "HT_0159": { "title": "APICS Principes de Gestion des Opérations" },
+      "HT_0160": { "title": "APICS Principes de Gestion de la Fabrication" },
+      "HT_0161": { "title": "APICS Principes de Planification des Opérations" }
+    }
   },
   "plan": {
+    "definition": "Définition",
     "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "infoDetails": {
+      "sP1": "Le développement et l'établissement de plans d'action sur des périodes de temps spécifiées qui représentent une affectation projetée de ressources de la chaîne logistique pour répondre aux exigences de la chaîne logistique pour les contraintes de délai les plus longs des ressources d'approvisionnement",
+      "sP2": "Le développement et l'établissement de plans d'action sur des périodes de temps spécifiées qui représentent une affectation projetée de ressources matérielles pour répondre aux exigences de la chaîne logistique",
+      "sP3": "Le développement et l'établissement de plans d'action sur des périodes de temps spécifiées qui représentent une affectation projetée de ressources de production pour répondre aux exigences de production",
+      "sP4": "Le développement et l'établissement de plans d'action sur des périodes de temps spécifiées qui représentent une affectation projetée de ressources de livraison pour répondre aux exigences de livraison",
+      "sP5": "Un processus stratégique ou tactique pour établir et ajuster des plans d'action ou des tâches sur des périodes de temps spécifiées qui représentent une affectation projetée de ressources et d'actifs de retour pour répondre aux exigences de retour anticipées et non anticipées. Le périmètre inclut les retours non planifiés de marchandises vendues ainsi que les retours planifiés de produits répartissables qui sont reconditionnés pour être redistribués aux clients"
+    },
     "items": {
       "sP1": { "title": "Planifier la supply chain" },
       "sP2": { "title": "Planifier le sourcing" },
@@ -81,27 +178,38 @@
     }
   },
   "source": {
+    "definition": "Définition",
     "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "infoDetails": {
+      "sS1": "Le processus de commande, réception et transfert d'articles de matières premières, sous-ensembles, produits et/ou services basé sur des exigences de demande agrégées. L'intention du sourcing sur stock est de maintenir un niveau prédéterminé d'inventaire pour ces matériaux, sous-ensembles ou produits. Aucune référence client ou détail de commande client n'est échangé avec le fournisseur, attaché ou marqué sur le produit, ou enregistré dans le système d'entrepôt ou ERP pour les produits sur stock",
+      "sS2": "Le processus de commande et réception de produit ou matériau qui est commandé (et peut être configuré) uniquement lorsque requis par une commande client spécifique. L'intention du sourcing à la commande est de maintenir un inventaire commandé (et/ou configuré) spécifiquement pour les commandes clients uniquement. Le produit est commandé, reçu et identifié en stock en utilisant cette référence de commande client (inventaire désigné par commande). Le produit est généralement identifiable tout au long du processus d'approvisionnement, par la référence à la commande client attachée ou marquée sur le produit ou l'emballage et dans le système de gestion d'entrepôt ou ERP. Des exemples de noms alternatifs ou liés au sourcing à la commande sont : achat à la commande, commande spéciale (industrie du commerce de détail), kitting et séquençage de ligne (industries manufacturières)",
+      "sS3": "Le processus d'identification et de sélection des sources d'approvisionnement, négociation, validation, planification, commande et réception de pièces, assemblages ou produits ou services spécialisés qui sont conçus, commandés et/ou fabriqués basés sur les exigences ou spécifications d'une commande client spécifique"
+    },
     "items": {
-      "sS1": { "title": "Stratégie sourcing" },
-      "sS2": { "title": "Exécution sourcing" },
-      "sS3": { "title": "Collaboration fournisseurs" },
+      "sS1": { "title": "Source produit stocké" },
+      "sS2": { "title": "Source produit à la commande" },
+      "sS3": { "title": "Source produit ingénierie à la commande" },
       "sS4": { "title": "Planification inventaire" },
       "sS5": { "title": "Qualité & conformité" }
     },
     "subItems": {
-      "sS1.1": { "title": "Politiques", "description": "Définir les politiques et garde-fous de sourcing." },
-      "sS1.2": { "title": "Risques", "description": "Cartographier les risques fournisseurs et plans de mitigation." },
-      "sS1.3": { "title": "Catégories", "description": "Élaborer les stratégies par catégorie." },
-      "sS1.4": { "title": "Coût objectif", "description": "Faire des analyses de coût complet et TCO." },
+      "sS1.1": { "title": "Planifier les livraisons produit", "description": "Planifier et programmer les livraisons de produits." },
+      "sS1.2": { "title": "Recevoir le produit", "description": "Réceptionner les produits des fournisseurs." },
+      "sS1.3": { "title": "Vérifier le produit", "description": "Vérifier la quantité et la qualité des produits." },
+      "sS1.4": { "title": "Transférer le produit", "description": "Transférer les produits vers le stock ou la production." },
+      "sS1.5": { "title": "Autoriser le paiement fournisseur", "description": "Autoriser le paiement aux fournisseurs." },
       "sS2.1": { "title": "Pipeline RFQ", "description": "Construire le pipeline RFQ/RFP." },
       "sS2.2": { "title": "Onboarding", "description": "Onboarder les fournisseurs et les données de base." },
       "sS2.3": { "title": "Contrats", "description": "Gérer le cycle de vie des contrats." },
       "sS2.4": { "title": "Conformité", "description": "Exécuter les contrôles de conformité et d'audit." },
+      "sS2.5": { "title": "Paiement fournisseur", "description": "Traiter les paiements fournisseurs." },
       "sS3.1": { "title": "Cadence", "description": "Planifier les points de collaboration fournisseurs." },
       "sS3.2": { "title": "Prévisions", "description": "Partager prévisions et engagements." },
       "sS3.3": { "title": "Performance", "description": "Suivre les KPIs fournisseurs." },
       "sS3.4": { "title": "Amélioration", "description": "Piloter des plans d'amélioration communs." },
+      "sS3.5": { "title": "Spécifications d'ingénierie", "description": "Gérer les spécifications et changements d'ingénierie." },
+      "sS3.6": { "title": "Prototypage", "description": "Coordonner prototypes et validations." },
+      "sS3.7": { "title": "Revues techniques", "description": "Conduire des revues de conception techniques." },
       "sS4.1": { "title": "Cibles", "description": "Fixer les cibles de stock par site." },
       "sS4.2": { "title": "Règles", "description": "Définir règles de réappro et de stock de sécurité." },
       "sS4.3": { "title": "Paramètres", "description": "Aligner les paramètres de réapprovisionnement." },
@@ -113,7 +221,13 @@
     }
   },
   "make": {
+    "definition": "Définition",
     "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "infoDetails": {
+      "sM1": "Le processus d'ajout de valeur à un livrable, par la fabrication ou la création d'un produit ou d'un livrable ; ou dans les industries de services, la création de livrables de service. Les produits fabriqués sur stock sont destinés à être expédiés à partir de produits finis ou disponibles immédiatement sur la base d'un catalogue de produits/services prédéfini, ils peuvent être complétés avant la réception d'une commande client et sont généralement produits selon un calendrier planifié conformément à une prévision des ventes. Aucune référence client ou détail de commande client ou spécification n'est attaché aux ordres de production ou de service, attaché ou marqué sur le produit, ou enregistré dans le système de gestion de l'atelier ou ERP pour les produits Make-to-Stock. Les produits ou services 'configurables' ne peuvent pas être livrés via le processus Deliver Stocked Product, car les produits configurables nécessitent une référence client ou des détails de commande client.",
+      "sM2": "Le processus d'ajout de valeur à un livrable soit en tant que fabrication ou création d'un produit ou d'un livrable, soit dans les industries de services, création de livrables de service pour des commandes clients spécifiques. Les produits et services sont complétés, construits ou configurés uniquement en réponse à une commande client, la référence de commande client est attachée à l'ordre de production/service, attachée ou marquée sur le produit/livrable à la fin du processus de fabrication et référencée lors du transfert du produit vers Deliver. Le produit est identifiable tout au long du processus d'ajout de valeur, car fabriqué pour une commande client spécifique. Des exemples de noms alternatifs ou connexes pour Make-to-Order sont : Build-to-Order (BTO), Assemble-to-Order (ATO), Configure-to-Order (CTO) et postponement.",
+      "sM3": "Le processus d'ajout de valeur à un livrable soit en tant que fabrication ou création d'un produit ou d'un livrable, soit dans les industries de services, création de livrables de service, où l'objet de livraison n'est pas entièrement défini au début du processus. Le processus de développement, de conception, de validation et, en fin de compte, d'utilisation d'un processus d'ajout de valeur pour produire des produits ou des services basés sur les exigences d'un client spécifique. En général, Engineer-to-Order nécessite que les instructions de travail puissent être définies ou affinées et que les instructions de routage des matériaux puissent être ajoutées ou modifiées. Un exemple de nom alternatif ou connexe pour Make Engineer-to-Order est : Design-to-Order (DTO)."
+    },
     "items": {
       "sM1": { "title": "Planification production" },
       "sM2": { "title": "Pilotage atelier" },
@@ -145,7 +259,14 @@
     }
   },
   "deliver": {
+    "definition": "Définition",
     "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "infoDetails": {
+      "sD1": "Le processus de livraison de produits qui sont approvisionnés ou fabriqués sur la base de commandes clients agrégées, de commandes/demandes projetées et de paramètres de réapprovisionnement des stocks. L'intention de Deliver Stocked Product est d'avoir le produit disponible lorsqu'une commande client arrive (pour empêcher le client de chercher ailleurs). Pour les industries de services, ce sont des services pré-définis et disponibles immédiatement (par exemple, formation standard). Les produits ou services 'configurables' ne peuvent pas être livrés via le processus Deliver Stocked Product, car les produits configurables nécessitent une référence client ou des détails de commande client.",
+      "sD2": "Les processus de livraison de produit/service qui est approvisionné, configuré, fabriqué et/ou assemblé à partir de matières premières, pièces, ingrédients ou sous-ensembles standard, en réponse à une commande client ferme spécifique. Une référence à la commande client est échangée avec le processus d'approvisionnement ou d'ajout de valeur et attachée ou marquée sur le produit/service. Les produits en stock sont identifiables par commande client grâce à l'étiquetage et à la gestion des données d'inventaire. Les exemples incluent l'attribution d'un numéro de série, d'un numéro de lot ou d'un numéro de batch à une commande client avant Make ou Source, les processus qui génèrent une nomenclature pour le processus Make associé (par exemple, configure-to-order et assemble-to-order) et le processus de 'commande spéciale' dans le commerce de détail.",
+      "sD3": "Le processus d'obtention, de réponse et d'allocation de ressources pour une commande client qui a des exigences ou des spécifications uniques et de livraison d'un produit ou service qui est partiellement ou entièrement conçu, reconçu, fabriqué et/ou assemblé à partir d'une nomenclature/nomenclature de service ou d'une recette qui inclut une ou plusieurs pièces ou ingrédients personnalisés. La conception ne commencera qu'après la réception et la validation d'une commande client ferme.",
+      "sD4": "Deliver Retail Products sont les processus utilisés pour acquérir, merchandiser et vendre des produits finis dans un magasin de détail. Un magasin de détail est un lieu physique qui vend des produits (et services) directement au consommateur en utilisant un processus de point de vente (manuel ou automatisé) pour collecter le paiement. Le merchandising au niveau du magasin est le stockage et le réapprovisionnement des produits dans des emplacements de stockage désignés pour générer des ventes dans un magasin de détail."
+    },
     "items": {
       "sD1": { "title": "Gestion des commandes" },
       "sD2": { "title": "Opérations entrepôt" },
@@ -177,7 +298,16 @@
     }
   },
   "return": {
+    "definition": "Définition",
     "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "infoDetails": {
+      "sSR1": "Le retour et la détermination de la disposition des produits défectueux tels que définis par les réclamations de garantie, les rappels de produits, les produits non conformes et/ou d'autres politiques similaires, y compris le remplacement approprié. Le processus Return Defective Product prend en charge tout type de produit non conforme aux spécifications (y compris la non-conformité de commande telle qu'une livraison en retard ou autrement inappropriée) ; les règles commerciales de l'entreprise déterminent la définition de 'défectueux'. La disposition physique du produit peut ne pas faire partie du processus de retour",
+      "sDR1": "La réception et la détermination de la disposition des produits défectueux tels que définis par les réclamations de garantie, les rappels de produits, les produits non conformes et/ou d'autres politiques similaires, y compris le remplacement approprié. Le processus Return Defective Product prend en charge tout type de produit non conforme aux spécifications (y compris la non-conformité de commande telle qu'une livraison en retard ou autrement inappropriée) ; les règles commerciales de l'entreprise déterminent la définition de 'défectueux'. La disposition physique du produit peut ne pas faire partie du processus de retour.",
+      "sSR2": "Le retour de produits de Maintenance, Réparation et Révision (MRO) ou d'actifs de l'entreprise dans le but de les entretenir, de les réparer ou de les moderniser, tel que défini par les plans de maintenance ou la survenue ou l'anticipation d'un risque de défaillance. Généralement, les actifs de l'entreprise gérés par un processus MRO sont censés être remis à neuf dans un état utilisable et remis en service. Le processus Return ne représente pas les activités réelles de maintenance, de réparation ou de révision ; celles-ci sont généralement représentées par les processus Make. La disposition physique du produit peut ne pas faire partie du processus de retour",
+      "sDR2": "La réception de produits de Maintenance, Réparation et Révision (MRO) ou d'actifs de l'entreprise dans le but de les entretenir, de les réparer ou de les moderniser, tel que défini par les plans de maintenance ou la survenue ou l'anticipation d'un risque de défaillance. Généralement, les actifs de l'entreprise gérés par un processus MRO sont censés être remis à neuf dans un état utilisable et remis en service. Le processus Return ne représente pas les activités réelles de maintenance, de réparation ou de révision ; celles-ci sont généralement représentées par les processus Make. La disposition physique du produit peut ne pas faire partie du processus de retour.",
+      "sSR3": "Le retour d'inventaire excédentaire ou vieillissant ou de produits obsolètes tel que défini par les termes et conditions d'un contrat client/fournisseur. L'intention des retours de produits excédentaires est de réaffecter l'inventaire à un emplacement ou une organisation qui peut vendre le produit qui est considéré comme excédentaire dans l'emplacement actuel. La disposition physique du produit peut ne pas faire partie du processus de retour",
+      "sDR3": "La réception d'inventaire excédentaire ou vieillissant ou de produits obsolètes tel que défini par les termes et conditions d'un contrat client/fournisseur. L'intention des retours de produits excédentaires est de réaffecter l'inventaire à un emplacement ou une organisation qui peut vendre le produit qui est considéré comme excédentaire dans l'emplacement actuel. La disposition physique du produit peut ne pas faire partie du processus de retour."
+    },
     "items": {
       "sR1": { "title": "Prise en charge retours" },
       "sR2": { "title": "Inspection" },
@@ -209,13 +339,33 @@
     }
   },
   "enable": {
+    "definition": "Définition",
     "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "infoDetails": {
+      "sE1": "Le processus d'établissement, de documentation, de communication et de publication des règles métier de la chaîne logistique. Une règle métier est une déclaration ou un paramètre qui définit ou contraint certains aspects de l'entreprise et est généralement utilisée dans la prise de décision. Les règles métier sont destinées à influencer les résultats de l'exploitation de la chaîne logistique. Les règles métier peuvent s'appliquer aux personnes, aux processus, au comportement de l'entreprise et aux systèmes informatiques d'une organisation, et sont mises en place pour aider l'organisation à atteindre ses objectifs tout en maintenant la conformité aux politiques et lois internes et externes. Un exemple de règle métier peut énoncer 'aucun retour accepté sans autorisation de retour'. Les types de règles métier de la chaîne logistique incluent : Objectifs de performance Règles pour garantir ou appliquer la conformité aux réglementations et politiques (par exemple ITAR), Règles de planification telles que fréquence, horizon et niveau de plans, nomenclatures de planification",
+      "sE2": "Le processus de définition des objectifs de performance pour les indicateurs de la chaîne logistique qui s'alignent sur la stratégie et les objectifs globaux de l'entreprise, et pour le reporting de la performance, l'identification des écarts de performance, la réalisation d'analyses des causes profondes et le développement et le lancement d'actions correctives pour combler les écarts de performance. Ce processus décrit tous les niveaux et versions de gestion de la performance de la chaîne logistique. Les exemples incluent : Comptage cyclique des stocks, Projets d'optimisation des stocks, Efforts de réduction du temps de cycle des commandes, Programmes d'amélioration de la qualité de la production et des processus, Évaluations de la performance des fournisseurs Évaluations de la maturité des processus et pratiques Note : Il est courant que les organisations aient plusieurs versions de ce processus en place, dans différentes parties de l'organisation. Aux niveaux 3 et 4, ces processus peuvent différer considérablement selon les objectifs de chacun de ces processus de gestion de la performance.",
+      "sE3": "Le processus de collecte, de maintenance et de publication des données et informations nécessaires pour planifier, exploiter, mesurer et gérer la chaîne logistique. Des exemples de catégories d'éléments de données incluent : Données de référence : Données fondamentales sur les clients, fournisseurs, matières premières, nomenclatures, recettes, produits, personnes, processus et actifs nécessaires pour exploiter la chaîne logistique ; Données transactionnelles : Données associées aux achats, réceptions, mouvements de matières, opérations à valeur ajoutée, stockage, préparation, emballage, expédition et livraison de matériaux et produits ; Données de collaboration : Données des partenaires de la chaîne logistique qui fournissent la visibilité inter-organisationnelle de la chaîne logistique nécessaire pour planifier et exécuter la chaîne logistique de manière intégrée de bout en bout ; Métadonnées : Données qui décrivent et ajoutent des informations sur d'autres données ; Données de performance : Données de métriques et données d'entrée brutes associées nécessaires pour calculer les métriques ; Autres : Données de capteurs / Internet des objets (IoT), données de réseaux sociaux Les activités incluent l'ajout, la modification et la suppression (archivage) d'informations, le maintien de l'accès des utilisateurs (accorder, révoquer) et le maintien de la disponibilité de l'information (activer/désactiver).",
+      "sE4": "Le processus de développement, de gouvernance et de maintenance d'une organisation de personnel permanent, temporaire et externalisé, avec les bonnes qualifications, à l'appui des objectifs commerciaux et des objectifs de la chaîne logistique. Cela comprend l'identification des compétences requises et disponibles dans l'organisation, la détermination des écarts de compétences et de niveaux de compétence, l'identification des besoins de formation, des écarts de ressources et des ressources excédentaires. Note : Il s'agit d'un processus de planification pour garantir que le personnel (capacité) est disponible aux bons niveaux. La formation, l'embauche et le redéploiement réels ne font pas partie de ce processus car ce sont des processus RH.",
+      "sE5": "Le processus de planification, de maintenance et de disposition des actifs de la chaîne logistique développés pour l'exécution de la chaîne logistique. Cela comprend l'installation, la réparation, la modification, l'étalonnage et d'autres activités nécessaires pour soutenir l'exécution de la chaîne logistique. Discussion : Il s'agit davantage d'un processus de planification pour garantir que les actifs (capacité) sont disponibles aux bons niveaux au bon moment. Les processus de maintenance réels, etc. sont décrits à l'aide de processus SCOR standard. Par exemple : Le processus d'exécution de maintenance de routine sur un camion est décrit en utilisant les processus Return MRO et/ou Make.",
+      "sE6": "La gestion et la communication des accords contractuels et non contractuels à l'appui des objectifs commerciaux et des objectifs de la chaîne logistique. Cela inclut tous les accords liés aux opérations de la chaîne logistique, y compris : l'acquisition de matériaux et de services, les pratiques et niveaux de stockage des stocks, les objectifs de performance, la planification et la prise de décision, la logistique et la livraison, et l'échange et la visibilité des données. Notes : Cela couvre l'ancien sES.10 et des parties de sES.6, sEM.6, SED.6, sER.6. L'identification et la sélection des fournisseurs et les négociations de contrats résident dans les processus DCOR (et partiellement dans sS3). La poursuite des clients et la conclusion des contrats clients résident dans les processus CCOR.",
+      "sE7": "Le processus de définition et de gestion de l'empreinte géographique et d'activité de la chaîne logistique. Il définit l'emplacement des installations et les affectations de ressources, réseaux de distribution, fournisseurs, clients, matériaux, produits, capacités et/ou compétences à ces emplacements.",
+      "sE8": "Le processus d'identification, de collecte, d'évaluation et d'intégration des exigences de conformité réglementaire dans les processus, politiques et règles métier standard de la chaîne logistique. Ce processus comprend également la gestion de la conformité volontaire aux normes et certifications. La conformité réglementaire est le terme généralement utilisé pour décrire les politiques et processus que les organisations ont mis en place pour s'assurer qu'elles se conforment aux lois, règles et réglementations mises en place par des organismes externes (gouvernement) qui contrôlent l'activité dans une juridiction donnée. Souvent, les organisations choisissent d'aller au-delà de la conformité réglementaire pour répondre aux normes de conformité volontaire et/ou poursuivre des certifications volontaires pour des raisons stratégiques. Des exemples de conformité volontaire aux normes et certifications incluent : les normes ISO et les certifications optionnelles telles que Rain Forest Alliance Certified, Sustainable Forestry Initiative, etc. Un élément clé de la conformité réglementaire/volontaire est l'établissement de politiques, de règles métier et de processus pour garantir que les exigences de conformité législative et réglementaire sont respectées. Cela comprend la garantie que le personnel est au courant et prend des mesures pour se conformer aux lois, réglementations et normes pertinentes, ainsi que la conservation des données ou des enregistrements utilisés pour la validation de la conformité. Des exemples de conformité réglementaire incluent : C-TPAT, matières dangereuses, import/export, travail, licences, taxes. Note : Ce sont des exemples, SCOR ne (tente pas de) fournir une liste complète.",
+      "sE9": "Le processus d'identification et d'évaluation des perturbations potentielles (risques) dans la chaîne logistique et l'élaboration d'un plan pour atténuer ces menaces à l'exploitation de la chaîne logistique. Les risques de la chaîne logistique incluent : Perturbations de la demande - par exemple, clients en faillite, Perturbations de l'approvisionnement - par exemple, fournisseurs en faillite, problèmes de qualité/performance des fournisseurs, Perturbations environnementales - par exemple, météo, inondations, tremblements de terre, Perturbations financières - par exemple, disponibilité du crédit, investisseurs, Fraude, vol et mauvaise gestion - manque d'atténuation des risques, Perturbation du travail - par exemple, grèves des employés, disponibilité de personnel qualifié, Terrorisme et cyberattaques Les stratégies d'atténuation des risques incluent l'évitement du risque, la réduction de l'impact ou de la probabilité du risque, le transfert du risque à une autre partie et l'acceptation d'une partie du risque. Des exemples de changements au réseau de la chaîne logistique, au processus et aux ressources incluent : assurance, relocalisation, double/triple approvisionnement, externalisation, internalisation, délocalisation, relocalisation, sécurité, refonte de la chaîne logistique, refonte des processus, changements de règles métier, renégociation de contrats. SE9 Manage Supply Chain Risk est étroitement aligné sur la section 5 de la norme ISO 31000. ISO 31000 est une norme générique de gestion des risques à l'échelle de l'entreprise, sE9 - Manage Supply Chain Risk est l'adaptation pour la gestion des risques de la chaîne logistique. Note : La section 5.6 de la norme ISO 31000 Surveiller et examiner est représentée dans SCOR comme sE2 Manage",
+      "sE10": "Le cycle d'approvisionnement est le processus cyclique d'étapes clés lors de l'acquisition de biens ou de services. Les concepts de cette section ont été développés en collaboration avec les normes d'approvisionnement décrites par le Chartered Institute of Procurement & Supply (CIPS). Pour plus d'informations sur les pratiques d'approvisionnement et d'approvisionnement reconnues dans le monde entier, veuillez visiter le site Web du CIPS à www.cips.org.",
+      "sE11": "Le processus de définition, de déploiement et de gestion de l'activation technologique impliquée dans la planification, l'exécution et la gestion de la performance de la chaîne logistique. La portée de l'activation technologique dans la chaîne logistique va bien au-delà des systèmes ERP et MRP fondamentaux pour inclure : Systèmes de planification, Portails fournisseurs, Outils et plateformes d'approvisionnement, Systèmes d'exécution de fabrication (MES), Outils de modélisation et d'analyse de la chaîne logistique, Solutions de capteurs et d'Internet des objets (IoT), Solutions d'automatisation des processus et des activités, Outils et plateformes de visibilité et de collaboration de la chaîne logistique, Outils et plateformes de surveillance et de gestion des risques de la chaîne logistique Outils de métriques et de reporting, Technologies de détection de la demande (par exemple, surveillance et analyse des réseaux sociaux) Discussion : De nombreuses organisations ont des processus à l'échelle de l'entreprise pour gérer la technologie. Ce processus n'est pas destiné à dupliquer ou remplacer ces processus d'entreprise, mais est destiné à renforcer la nécessité d'une attention et d'une participation ciblées de l'organisation de la chaîne logistique dans la définition des exigences et des choix technologiques pour la chaîne logistique. Il n'inclut pas les activités de gestion informatique standard pour les tests et la mise en œuvre de nouvelles solutions technologiques."
+    },
     "items": {
       "sE1": { "title": "Données & analytique" },
       "sE2": { "title": "Technologie" },
       "sE3": { "title": "People & formation" },
       "sE4": { "title": "Politique & gouvernance" },
-      "sE5": { "title": "Amélioration continue" }
+      "sE5": { "title": "Amélioration continue" },
+      "sE6": { "title": "Gestion des contrats" },
+      "sE7": { "title": "Conception réseau" },
+      "sE8": { "title": "Conformité réglementaire" },
+      "sE9": { "title": "Gestion des risques" },
+      "sE10": { "title": "Cycle d'approvisionnement" },
+      "sE11": { "title": "Activation technologique" }
     },
     "subItems": {
       "sE1.1": { "title": "Modèle de données", "description": "Consolider sources et modèles de données." },
@@ -238,6 +388,288 @@
       "sE5.2": { "title": "Backlog", "description": "Prioriser le backlog d'amélioration." },
       "sE5.3": { "title": "Pilotes", "description": "Lancer pilotes et expérimentations." },
       "sE5.4": { "title": "Industrialisation", "description": "Industrialiser les pratiques qui marchent." }
+    }
+  },
+  "performance": {
+    "reliability": "Fiabilité",
+    "responsiveness": "Réactivité",
+    "agility": "Agilité",
+    "cost": "Coût",
+    "assetManagement": "Gestion des actifs",
+    "definition": "Définition",
+    "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "infoDetails": {
+      "RL_1_1": "Le pourcentage de commandes répondant aux performances de livraison avec une documentation complète et précise et sans dommage de livraison. Les composants incluent tous les articles et quantités à temps selon la définition du client de 'à temps', et la documentation - bons de livraison, connaissements, factures, etc. Le dictionnaire APICS définit la commande parfaite comme une commande dans laquelle les 'sept R' sont satisfaits : le bon produit, la bonne quantité, le bon état, le bon endroit, le bon moment, le bon client et le bon coût. Le modèle SCOR aborde les 'sept R' par une métrique stratégique unique appelée Perfect Order Fulfillment (POF) qui regroupe le bon produit et la bonne quantité dans une métrique de niveau 2 appelée % de commandes livrées intégralement, le bon moment et le bon emplacement (et le bon client implicite) sont regroupés dans une métrique de niveau 2 appelée Performance de livraison à la date d'engagement client, le bon état est mesuré dans la métrique de niveau 2 Perfect Condition et le bon coût est mesuré avec l'attribut stratégique Coût global. Calcul [Total des commandes parfaites] / [Nombre total de commandes] x 100% Remarque : Une commande est parfaite si les lignes individuelles composant cette commande sont toutes parfaites. Le calcul de Perfect Order Fulfillment est basé sur les performances de chaque composant de niveau 2 de la ligne de commande à calculer (produit et quantité, date et heure et client, documentation et condition). Pour qu'une ligne de commande soit parfaite, tous les composants individuels doivent être parfaits.",
+      "RL_2_1": "Pourcentage de commandes pour lesquelles tous les articles sont reçus par le client dans les quantités engagées. Le nombre de commandes qui sont reçues par le client dans les quantités engagées divisé par le total des commandes. Calcul : [Nombre total de commandes livrées intégralement] / [Nombre total de commandes livrées] x 100%. Une commande est considérée comme livrée 'intégralement' si : Tous les articles commandés sont les articles effectivement fournis, et aucun article supplémentaire n'est fourni ; Toutes les quantités reçues par le client correspondent aux quantités commandées (dans les tolérances mutuellement convenues).",
+      "RL_2_2": "Le pourcentage de commandes qui sont réalisées à la date initialement engagée du client. Calcul : [Nombre total de commandes livrées à la date d'engagement initiale] / [Nombre total de commandes livrées] x 100%. Une commande est considérée comme livrée à la date d'engagement client d'origine si : La commande est reçue à temps tel que défini par le client ; La livraison est effectuée au bon emplacement et à la bonne entité client.",
+      "RL_2_3": "Pourcentage de commandes avec une documentation ponctuelle et précise soutenant la commande, y compris les bons de livraison, les connaissements, les factures, etc. Calcul : Nombre total de commandes livrées avec une documentation précise] / [Nombre total de commandes livrées) x 100%. Une commande est considérée comme ayant une documentation précise lorsque les éléments suivants sont acceptés par le client : La documentation soutenant la commande comprend : Documentation d'expédition : Bons de livraison (clients) Connaissement (transporteurs), Documentation/formulaires gouvernementaux ou douaniers Documentation de paiement : Facture, Accord-cadre contractuel, Documentation de conformité Fiches de données de sécurité des matériaux, Autre documentation requise Certification de qualité. Toute la documentation doit être complète, correcte et facilement disponible quand et comment attendu par le client, le gouvernement et d'autres entités réglementaires de la chaîne logistique.",
+      "RL_2_4": "Pourcentage de commandes livrées dans un état non endommagé qui répondent aux spécifications, ont la configuration correcte, sont installées sans défaut (le cas échéant) et acceptées par le client. Calcul : [Nombre de commandes livrées en état parfait] / [Nombre de commandes livrées] x 100%. Une commande est considérée comme livrée en état parfait si tous les articles répondent aux critères suivants : Non endommagé, Répond aux spécifications et a la configuration correcte (le cas échéant), Installé sans défaut (le cas échéant) et accepté par le client, Non retourné pour réparation ou remplacement (pendant la période de garantie).",
+      "RL_3_X": "Les métriques de niveau 3 servent de diagnostics pour les métriques de niveau 2.",
+      "RS_1_1": "Le temps de cycle moyen réellement atteint pour traiter les commandes clients. Pour chaque commande individuelle, ce temps de cycle commence à la réception de la commande et se termine avec l'acceptation de la commande par le client. Calcul : [Somme des temps de cycle réels pour toutes les commandes livrées] / [Nombre total de commandes livrées] en jours.",
+      "RS_2_1": "Le temps moyen associé aux processus Source. (Processus : sS1, sS2, sS3) Calcul : Temps de cycle Source = (temps de cycle d'identification des sources d'approvisionnement + temps de cycle de sélection du fournisseur et de négociation) + temps de cycle de planification des livraisons de produits + temps de cycle de réception du produit + temps de cycle de vérification du produit + temps de cycle de transfert du produit + temps de cycle d'autorisation du paiement fournisseur.",
+      "RS_2_2": "Le temps moyen associé aux processus Make. Calcul : Temps de cycle Make = (temps de cycle de finalisation de l'ingénierie de production) + temps de cycle de planification des activités de production + temps de cycle d'émission du matériel/produit + temps de cycle de production et de test + temps de cycle d'emballage + temps de cycle de mise en attente du produit fini + temps de cycle de libération du produit fini vers Deliver.",
+      "RS_2_3": "Le temps moyen associé aux processus Deliver. Calcul : Temps de cycle Deliver = MAX (temps de cycle de réservation des ressources et de détermination de la date de livraison + (temps de cycle de consolidation des commandes + temps de cycle de planification de l'installation) + temps de cycle de constitution des charges + temps de cycle de routage des expéditions + temps de cycle de sélection des transporteurs et de tarification des expéditions), temps de cycle de réception du produit de Make/Source) + temps de cycle de prélèvement du produit + temps de cycle d'emballage du produit + temps de cycle de chargement du véhicule et de génération de la documentation d'expédition + temps de cycle d'expédition du produit + (temps de cycle de réception et de vérification du produit) + (temps de cycle d'installation du produit). *La fonction MAX ci-dessus indique que sDx.3-sDx.7 peuvent être en parallèle avec sDx.8 et que le plus long doit déterminer le temps de cycle.",
+      "RS_2_4": "Le temps de cycle moyen des processus utilisés pour acquérir, merchandiser et vendre des produits finis dans un magasin de détail. Calcul : Temps de cycle Delivery Retail = temps de cycle de génération du planning de stockage + temps de cycle de réception du produit + temps de cycle de prélèvement du produit + temps de cycle de mise en rayon + temps de cycle de remplissage du panier + temps de cycle de passage en caisse + temps de cycle d'installation.",
+      "RS_2_5": "Le temps de cycle moyen des processus utilisés pour acquérir, merchandiser et vendre des produits finis dans un magasin de détail. Calcul : Temps de cycle Return = (identification du besoin de retour + coordination et planification du retour + temps de transit du retour + temps de réception du produit retourné + temps de vérification et de transfert du produit retourné).",
+      "RS_3_X": "Les métriques de niveau 3 servent de diagnostics pour les métriques de niveau 2.",
+      "AG_1_1": "L'augmentation maximale durable en pourcentage de la quantité livrée pouvant être atteinte en 30 jours. Notes : 30 jours est un nombre arbitraire fourni à des fins de benchmarking. Pour certaines industries et organisations, 30 jours peuvent être dans certains cas inatteignables ou dans d'autres trop conservateurs. Note : Les métriques composantes (Adaptabilité Source à la hausse, Adaptabilité Make à la hausse, etc.) peuvent être améliorées en parallèle et par conséquent, ce calcul nécessite que le résultat soit la moindre augmentation de quantité durable en 30 jours. Le nouveau niveau d'exploitation doit être atteint sans augmentation significative du coût unitaire. Calcul : L'adaptabilité de la chaîne d'approvisionnement est la quantité minimale durable en considérant les composantes Source, Make, Deliver et Return.",
+      "AG_2_1": "L'augmentation maximale durable en pourcentage des quantités de matières premières pouvant être acquises/reçues en 30 jours.",
+      "AG_2_2": "L'augmentation maximale durable en pourcentage de la production pouvant être atteinte en 30 jours en supposant qu'il n'y a pas de contraintes de matières premières.",
+      "AG_2_3": "L'augmentation maximale durable en pourcentage des quantités livrées pouvant être atteinte en 30 jours en supposant une disponibilité illimitée de produits finis.",
+      "AG_2_4": "L'augmentation maximale durable en pourcentage des retours de matières premières aux fournisseurs pouvant être atteinte en 30 jours.",
+      "AG_2_5": "L'augmentation maximale durable en pourcentage des retours de produits finis des clients pouvant être atteinte en 30 jours.",
+      "AG_1_2": "La réduction des quantités commandées durable à 30 jours avant la livraison sans pénalités d'inventaire ou de coût. Note : 30 jours est un nombre arbitraire fourni à des fins de benchmarking. Pour certaines industries et organisations, 30 jours peuvent être dans certains cas inatteignables ou dans d'autres trop conservateurs. Calcul : Adaptabilité Source à la baisse + Adaptabilité Make à la baisse + Adaptabilité Deliver à la baisse. L'adaptabilité de la chaîne d'approvisionnement à la baisse est la réduction minimale durable en considérant les composantes Source, Make, Deliver et Return.",
+      "AG_2_6": "La réduction de quantité de matières premières durable à 30 jours avant la livraison sans pénalités d'inventaire ou de coût.",
+      "AG_2_7": "La réduction de production durable à 30 jours avant la livraison sans pénalités d'inventaire ou de coût.",
+      "AG_2_8": "La réduction des quantités livrées durable à 30 jours avant la livraison sans pénalités d'inventaire ou de coût.",
+      "AG_1_4": "La gestion des risques dans les organisations réside traditionnellement au sein de la fonction finance, en raison de son attention inhérente sur l'impact financier sur l'organisation. Cependant, la plupart des organisations n'évaluent pas le risque de la chaîne d'approvisionnement séparément. Ces dernières années, la gestion des risques de la chaîne d'approvisionnement (SCRM) est devenue le domaine d'intérêt pour les cadres financiers responsables de la gestion des risques d'entreprise. Il est donc nécessaire d'établir un langage commun pour monétiser le risque de la chaîne d'approvisionnement. La valeur à risque (VaR) est une métrique de risque populaire largement utilisée par l'industrie financière pour comprendre l'exposition au risque d'un portefeuille de trading basé sur la volatilité historique. Calcul VaR simple : VaR = Probabilité de l'événement de risque (P) x Impact monétisé de l'événement de risque (I).",
+      "AG_2_9": "La notation de risque numérique pour le fournisseur, le client ou le produit. Normalisée et utilisée à des fins de comparaison.",
+      "AG_2_10": "La somme de la probabilité des événements de risque multipliée par l'impact monétaire des événements dans toutes les activités Plan. L'événement de risque ici peut être défini comme l'écart par rapport à la valeur attendue des métriques pour le processus.",
+      "AG_2_11": "La somme de la probabilité des événements de risque multipliée par l'impact monétaire des événements dans toutes les activités Source. L'événement de risque ici peut être défini comme l'écart par rapport à la valeur attendue des métriques pour le processus.",
+      "AG_2_12": "La somme de la probabilité des événements de risque multipliée par l'impact monétaire des événements dans toutes les activités Make. L'événement de risque ici peut être défini comme l'écart par rapport à la valeur attendue des métriques pour le processus.",
+      "AG_2_13": "La somme de la probabilité des événements de risque multipliée par l'impact monétaire des événements dans toutes les activités Deliver. L'événement de risque ici peut être défini comme l'écart par rapport à la valeur attendue des métriques pour le processus.",
+      "AG_2_14": "La somme de la probabilité des événements de risque multipliée par l'impact monétaire des événements dans toutes les activités Return. L'événement de risque ici peut être défini comme l'écart par rapport à la valeur attendue des métriques pour le processus.",
+      "AG_2_15": "Le temps de récupération (TTR) est le temps total qu'il faudrait à un point du réseau pour devenir pleinement fonctionnel après une perturbation. Cela inclurait le temps total de récupération, y compris les informations TTR des fournisseurs combinées avec les propres données de l'organisation pour identifier l'exposition au risque pour chacun des sites du réseau."
+    },
+    "items": {
+      "REL1": { "title": "Disponibilité" },
+      "REL2": { "title": "Qualité" },
+      "REL3": { "title": "Stabilité" },
+      "REL4": { "title": "Continuité" },
+      "REL5": { "title": "Conformité" },
+
+      "RES1": { "title": "Délai" },
+      "RES2": { "title": "Débit" },
+      "RES3": { "title": "Capacité flexible" },
+      "RES4": { "title": "Expédition urgente" },
+      "RES5": { "title": "Réponse client" },
+
+      "AG_1_1": { "title": "Adaptabilité Amont Supply Chain" },
+      "AG_2_1": { "title": "Adaptabilité Amont (Source)" },
+      "AG_2_2": { "title": "Adaptabilité Amont (Make)" },
+      "AG_2_3": { "title": "Adaptabilité Amont (Deliver)" },
+      "AG_2_4": { "title": "Adaptabilité Amont Retour (Source)" },
+      "AG_2_5": { "title": "Adaptabilité Amont Retour (Deliver)" },
+      "AG_1_2": { "title": "Adaptabilité Aval Supply Chain" },
+      "AG_2_6": { "title": "Adaptabilité Aval (Source)" },
+      "AG_2_7": { "title": "Adaptabilité Aval (Make)" },
+      "AG_2_8": { "title": "Adaptabilité Aval (Deliver)" },
+      "AG_1_4": { "title": "Valeur Globale à Risque (VAR)" },
+      "AG_2_9": { "title": "Notation de Risque Fournisseur/Client/Produit" },
+      "AG_2_10": { "title": "Valeur à Risque Plan" },
+      "AG_2_11": { "title": "Valeur à Risque Source" },
+      "AG_2_12": { "title": "Valeur à Risque Make" },
+      "AG_2_13": { "title": "Valeur à Risque Deliver" },
+      "AG_2_14": { "title": "Valeur à Risque Return" },
+      "AG_2_15": { "title": "Délai de Récupération (TTR)" },
+
+      "CST1": { "title": "Inducteurs de coûts" },
+      "CST2": { "title": "Efficience" },
+      "CST3": { "title": "Gaspillage" },
+      "CST4": { "title": "Benchmark" },
+      "CST5": { "title": "Coût unitaire" },
+
+      "ASM1": { "title": "Santé des actifs" },
+      "ASM2": { "title": "Utilisation" },
+      "ASM3": { "title": "Disponibilité" },
+      "ASM4": { "title": "Cycle de vie" },
+      "ASM5": { "title": "Pièces de rechange" }
+    },
+    "subItems": {
+      "REL1.1": { "description": "Suivre le taux de disponibilité des systèmes critiques." },
+      "REL1.2": { "description": "Suivre les taux de panne et le MTBF." },
+      "REL1.3": { "description": "Analyser tendances et causes des incidents." },
+      "REL1.4": { "description": "Mettre en œuvre des améliorations de fiabilité." },
+
+      "REL2.1": { "description": "Mesurer les taux de défaut et d'évasion." },
+      "REL2.2": { "description": "Auditer les contrôles qualité." },
+      "REL2.3": { "description": "Renforcer les mécanismes de prévention." },
+      "REL2.4": { "description": "Reporter la performance qualité." },
+
+      "REL3.1": { "description": "Évaluer la variabilité des processus." },
+      "REL3.2": { "description": "Stabiliser les opérations clés." },
+      "REL3.3": { "description": "Réduire les arrêts non planifiés." },
+      "REL3.4": { "description": "Standardiser les instructions de travail." },
+
+      "REL4.1": { "description": "Planifier la continuité et les redondances." },
+      "REL4.2": { "description": "Tester les procédures de reprise." },
+      "REL4.3": { "description": "Protéger données et flux critiques." },
+      "REL4.4": { "description": "Maintenir les KPIs de continuité." },
+
+      "REL5.1": { "description": "Assurer l'adhérence réglementaire." },
+      "REL5.2": { "description": "Maintenir les certifications." },
+      "REL5.3": { "description": "Réaliser des audits de conformité." },
+      "REL5.4": { "description": "Suivre les actions correctives." },
+
+      "RES1.1": { "description": "Cartographier le délai de bout en bout." },
+      "RES1.2": { "description": "Identifier les goulots d'étranglement." },
+      "RES1.3": { "description": "Réduire les temps d'attente." },
+      "RES1.4": { "description": "Améliorer l'efficacité du flux." },
+
+      "RES2.1": { "description": "Mesurer le débit par ligne." },
+      "RES2.2": { "description": "Optimiser l'ordonnancement." },
+      "RES2.3": { "description": "Équilibrer les charges." },
+      "RES2.4": { "description": "Monter rapidement en capacité." },
+
+      "RES3.1": { "description": "Planifier la capacité flexible." },
+      "RES3.2": { "description": "Former de manière polyvalente." },
+      "RES3.3": { "description": "Permettre des réaffectations rapides." },
+      "RES3.4": { "description": "Suivre la préparation aux pics." },
+
+      "RES4.1": { "description": "Définir des chemins d'expédition urgente." },
+      "RES4.2": { "description": "Poser des SLAs pour les urgents." },
+      "RES4.3": { "description": "Suivre l'impact des urgences." },
+      "RES4.4": { "description": "Limiter la dépendance aux urgences." },
+
+      "RES5.1": { "description": "Vitesse de réponse côté client." },
+      "RES5.2": { "description": "Temps de résolution." },
+      "RES5.3": { "description": "Boucles de feedback." },
+      "RES5.4": { "description": "Scores de satisfaction." },
+
+      "AGI1.1": { "description": "Délai d'adaptation des plans." },
+      "AGI1.2": { "description": "Préparation aux scénarios." },
+      "AGI1.3": { "description": "Vitesse de reconfiguration." },
+      "AGI1.4": { "description": "Latence de décision." },
+
+      "AGI2.1": { "description": "KPIs d'adoption du changement." },
+      "AGI2.2": { "description": "Couverture de formation." },
+      "AGI2.3": { "description": "Alignement parties prenantes." },
+      "AGI2.4": { "description": "Efficacité de communication." },
+
+      "AGI3.1": { "description": "Pipeline d'idées." },
+      "AGI3.2": { "description": "Taux de succès des essais." },
+      "AGI3.3": { "description": "Time-to-value." },
+      "AGI3.4": { "description": "Industrialiser les innovations." },
+
+      "AGI4.1": { "description": "Playbooks de reconfiguration." },
+      "AGI4.2": { "description": "Configurations modulaires." },
+      "AGI4.3": { "description": "Onboarding rapide." },
+      "AGI4.4": { "description": "Vitesse d'intégration." },
+
+      "AGI5.1": { "description": "Cycle de décision." },
+      "AGI5.2": { "description": "Chemins d'escalade." },
+      "AGI5.3": { "description": "Clarté des responsabilités." },
+      "AGI5.4": { "description": "Efficacité de gouvernance." },
+
+      "CST1.1": { "description": "Identifier les inducteurs de coûts." },
+      "CST1.2": { "description": "Allouer les frais généraux équitablement." },
+      "CST1.3": { "description": "Suivre l'économie unitaire." },
+      "CST1.4": { "description": "Améliorer la structure de coûts." },
+
+      "CST2.1": { "description": "Efficience énergie et travail." },
+      "CST2.2": { "description": "Optimiser l'usage matière." },
+      "CST2.3": { "description": "ROI de l'automatisation." },
+      "CST2.4": { "description": "Simplification des processus." },
+
+      "CST3.1": { "description": "Identifier les sources de gaspillage." },
+      "CST3.2": { "description": "Initiatives Lean." },
+      "CST3.3": { "description": "Tendances rebuts et retouches." },
+      "CST3.4": { "description": "Éliminer les tâches sans valeur." },
+
+      "CST4.1": { "description": "Benchmark avec pairs." },
+      "CST4.2": { "description": "Analyse des écarts." },
+      "CST4.3": { "description": "Plans d'action pour combler les écarts." },
+      "CST4.4": { "description": "Suivre l'avancement." },
+
+      "CST5.1": { "description": "Calculer le coût unitaire." },
+      "CST5.2": { "description": "Suivre tendances et variance." },
+      "CST5.3": { "description": "Sensibilité au prix." },
+      "CST5.4": { "description": "Inducteurs de rentabilité." },
+
+      "ASM1.1": { "description": "Suivre la santé des actifs." },
+      "ASM1.2": { "description": "Maintenance prédictive." },
+      "ASM1.3": { "description": "Modes et effets de défaillance." },
+      "ASM1.4": { "description": "Actions basées sur l'état." },
+
+      "ASM2.1": { "description": "Taux d'utilisation par actif." },
+      "ASM2.2": { "description": "Analyse des temps d'arrêt." },
+      "ASM2.3": { "description": "Utilisation de capacité." },
+      "ASM2.4": { "description": "Optimiser l'ordonnancement." },
+
+      "ASM3.1": { "description": "Disponibilité opérationnelle." },
+      "ASM3.2": { "description": "MTTR et MTBF." },
+      "ASM3.3": { "description": "Ventilation des arrêts." },
+      "ASM3.4": { "description": "Amélioration de la disponibilité." },
+
+      "ASM4.1": { "description": "Modélisation du coût du cycle de vie." },
+      "ASM4.2": { "description": "Stratégie de remplacement." },
+      "ASM4.3": { "description": "Suivi de la dépréciation." },
+      "ASM4.4": { "description": "Planification fin de vie." },
+
+      "ASM5.1": { "description": "Couverture des pièces de rechange." },
+      "ASM5.2": { "description": "Politiques de réappro." },
+      "ASM5.3": { "description": "Liste des pièces critiques." },
+      "ASM5.4": { "description": "SLAs fournisseurs pour pièces." }
+    }
+  },
+  "practices": {
+    "emerging": "Pratique émergente",
+    "best": "Meilleure pratique",
+    "standard": "Pratique standard",
+    "emergingDesc": "Approches nouvelles ou expérimentales en pilote.",
+    "bestDesc": "Méthodes éprouvées reconnues pour de meilleurs résultats.",
+    "standardDesc": "Pratiques de base établies et appliquées systématiquement.",
+    "infoBody": "Texte d'information (placeholder). Ajoute ici les détails pour {{title}}.",
+    "items": {
+      "BP_120": { "title": "Impression 3D/Prototypage Rapide" },
+      "BP_121": { "title": "Emballage Numérique à la Demande" },
+      "BP_150": { "title": "Registre des Risques Supply Chain" },
+      "BP_176": { "title": "Omnicanal" },
+      "BP_177": { "title": "Fabrication Additive" },
+      "BP_178": { "title": "Blockchain" },
+      "BP_179": { "title": "MRP Piloté par la Demande (DDMRP)" },
+      "BP_180": { "title": "S&OP Piloté par la Demande (DDS&OP)" },
+      "BP_181": { "title": "Supply Chain Digitale" },
+      "BP_182": { "title": "Internet des Objets (IoT)" },
+      "BP_183": { "title": "Planification Intégrée (IBP)" },
+      "BP_184": { "title": "Planification par Scénarios" },
+      "BP_188": { "title": "Synchronisation Objets SCM – \"Rapprochement 3/4 voies\"" }
+    },
+    "standardSection": {
+      "items": {
+        "BP_001": { "title": "Gestion des risques de la chaîne d'approvisionnement (SCRM)" },
+        "BP_004": { "title": "Priorisation du réseau pour l'identification des risques" },
+        "BP_005": { "title": "Auto-facturation" },
+        "BP_006": { "title": "Inventaire en consignation" },
+        "BP_007": { "title": "Surveillance de l'inventaire de base" },
+        "BP_008": { "title": "Surveillance des stocks à rotation lente" },
+        "BP_009": { "title": "Kanban" },
+        "BP_010": { "title": "Réapprovisionnement Min-Max" },
+        "BP_011": { "title": "Séquençage de ligne de production" },
+        "BP_012": { "title": "Suivi de lot" },
+        "BP_014": { "title": "Planification et prévision de la demande" },
+        "BP_015": { "title": "Planification du stock de sécurité" },
+        "BP_017": { "title": "Planification de la distribution" },
+        "BP_018": { "title": "Système de classification des stocks ABC" },
+        "BP_021": { "title": "Ventes et opérations" }
+      }
+    },
+    "bestSection": {
+      "items": {
+        "BP_002": { "title": "Stratégies de Gestion des Risques" },
+        "BP_003": { "title": "Échange d'Outil en Une Minute (SMED)" },
+        "BP_109": { "title": "Prépositionnement de Carcasse" },
+        "BP_103": { "title": "Rationalisation des Articles" },
+        "BP_016": { "title": "Planification du Réseau d'Approvisionnement" },
+        "BP_024": { "title": "Optimisation de la Supply Chain (SCO)" },
+        "BP_025": { "title": "Soumission en Libre-Service de Réclamation Garantie" },
+        "BP_026": { "title": "Améliorer le Processus S&OP" },
+        "BP_027": { "title": "Réapprovisionnement des Stocks en Flux Tiré" },
+        "BP_028": { "title": "Optimisation des Stocks" },
+        "BP_029": { "title": "Optimisation du Réseau" },
+        "BP_031": { "title": "Rationalisation SKU/Analyse Coût des Ventes" },
+        "BP_034": { "title": "Planification Stock via Collaboration (Fournisseurs Clés)" },
+        "BP_036": { "title": "Stock en Consignation avec Fournisseurs Clés" },
+        "BP_041": { "title": "Optimisation du Transport" },
+        "BP_048": { "title": "Façonnage de la Demande" },
+        "BP_049": { "title": "Planification Lean" },
+        "BP_052": { "title": "Conception pour la Logistique (DFL)" },
+        "BP_053": { "title": "Amélioration Fiabilité Fabrication" },
+        "BP_055": { "title": "Évaluation Performance Livraison Transporteurs" },
+        "BP_062": { "title": "Exactitude des Données Maîtres" },
+        "BP_071": { "title": "Optimisation Modale" },
+        "BP_074": { "title": "Alignement Processus/Métriques" }
+      }
     }
   }
 }

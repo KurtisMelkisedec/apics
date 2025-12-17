@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.kurtismelkisoft.apics"
     },
     "web": {
       "output": "static",
@@ -43,6 +44,19 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9c3f7e34-ce47-4980-bdaa-85a95739c951"
+      }
+    },
+    "owner": "kurtismelkisoft",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/9c3f7e34-ce47-4980-bdaa-85a95739c951"
     }
   }
 }

@@ -5,31 +5,44 @@ import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-nati
 
 import { Info } from 'lucide-react-native';
 
-export default function SourceScreen() {
+export default function BestPracticeScreen() {
   const { t } = useTranslation();
-  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [infoOpen, setInfoOpen] = useState<boolean>(false);
   const [infoContent, setInfoContent] = useState<{ code: string; title: string } | null>(null);
 
   const items = [
-    { code: 'sS1', title: t('source.items.sS1.title') },
-    { code: 'sS2', title: t('source.items.sS2.title') },
-    { code: 'sS3', title: t('source.items.sS3.title') },
+    { code: 'BP.002', title: t('practices.bestSection.items.BP_002.title') },
+    { code: 'BP.003', title: t('practices.bestSection.items.BP_003.title') },
+    { code: 'BP.109', title: t('practices.bestSection.items.BP_109.title') },
+    { code: 'BP.103', title: t('practices.bestSection.items.BP_103.title') },
+    { code: 'BP.016', title: t('practices.bestSection.items.BP_016.title') },
+    { code: 'BP.024', title: t('practices.bestSection.items.BP_024.title') },
+    { code: 'BP.025', title: t('practices.bestSection.items.BP_025.title') },
+    { code: 'BP.026', title: t('practices.bestSection.items.BP_026.title') },
+    { code: 'BP.027', title: t('practices.bestSection.items.BP_027.title') },
+    { code: 'BP.028', title: t('practices.bestSection.items.BP_028.title') },
+    { code: 'BP.029', title: t('practices.bestSection.items.BP_029.title') },
+    { code: 'BP.031', title: t('practices.bestSection.items.BP_031.title') },
+    { code: 'BP.034', title: t('practices.bestSection.items.BP_034.title') },
+    { code: 'BP.036', title: t('practices.bestSection.items.BP_036.title') },
+    { code: 'BP.041', title: t('practices.bestSection.items.BP_041.title') },
+    { code: 'BP.048', title: t('practices.bestSection.items.BP_048.title') },
+    { code: 'BP.049', title: t('practices.bestSection.items.BP_049.title') },
+    { code: 'BP.052', title: t('practices.bestSection.items.BP_052.title') },
+    { code: 'BP.053', title: t('practices.bestSection.items.BP_053.title') },
+    { code: 'BP.055', title: t('practices.bestSection.items.BP_055.title') },
+    { code: 'BP.062', title: t('practices.bestSection.items.BP_062.title') },
+    { code: 'BP.071', title: t('practices.bestSection.items.BP_071.title') },
+    { code: 'BP.074', title: t('practices.bestSection.items.BP_074.title') },
   ];
-
-  const subItemCodes: Record<string, string[]> = {
-    sS1: ['sS1.1', 'sS1.2', 'sS1.3', 'sS1.4', 'sS1.5'],
-    sS2: ['sS2.1', 'sS2.2', 'sS2.3', 'sS2.4', 'sS2.5'],
-    sS3: ['sS3.1', 'sS3.2', 'sS3.3', 'sS3.4', 'sS3.5', 'sS3.6', 'sS3.7'],
-  };
 
   return (
     <>
-      <Stack.Screen options={{ title: t('process.source') }} />
+      <Stack.Screen options={{ title: t('practices.best') }} />
       <ScrollView style={styles.container}>
         {items.map(item => (
           <View key={item.code}>
-            <Pressable style={styles.row} onPress={() => setExpanded(prev => ({ ...prev, [item.code]: !prev[item.code] }))}>
+            <Pressable style={styles.row}>
               <View>
                 <Text style={styles.code}>{item.code}</Text>
                 <Text style={styles.title}>{item.title}</Text>
@@ -48,26 +61,17 @@ export default function SourceScreen() {
                 </Pressable>
               </View>
             </Pressable>
-
-            {expanded[item.code] && (
-              <View style={styles.subList}>
-                {(subItemCodes[item.code] || []).map(subCode => (
-                  <View key={subCode} style={styles.subRow}>
-                    <Text style={styles.subCode}>{subCode}</Text>
-                    <Text style={styles.subDesc}>{t(`source.subItems.${subCode}.description`)}</Text>
-                  </View>
-                ))}
-              </View>
-            )}
           </View>
         ))}
         <Modal visible={infoOpen} transparent animationType="fade" onRequestClose={() => setInfoOpen(false)}>
           <View style={styles.modalOverlay}>
             <View style={styles.modalCard}>
-              <Text style={styles.modalTitle}>{t('source.definition')}</Text>
-              <Text style={styles.modalBody}>{infoContent?.code && t(`source.infoDetails.${infoContent.code}`)}</Text>
+              <Text style={styles.modalTitle}>
+                {infoContent?.code} • {infoContent?.title}
+              </Text>
+              <Text style={styles.modalBody}>{t('practices.infoBody', { title: infoContent?.title })}</Text>
               <Pressable style={styles.modalClose} onPress={() => setInfoOpen(false)}>
-                <Text style={styles.modalCloseText}>{t('common.close')}</Text>
+                <Text style={styles.modalCloseText}>{t('common.close', 'Close')}</Text>
               </Pressable>
             </View>
           </View>
@@ -92,17 +96,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
-  subList: {
-    backgroundColor: '#FFF',
-    paddingHorizontal: 8,
-    paddingVertical: 6,
-  },
-  subRow: {
-    flexDirection: 'column',
-    borderBottomColor: '#E6E6E6',
-    borderBottomWidth: 1,
-    paddingVertical: 10,
-  },
   code: {
     color: '#7EC8E3',
     fontWeight: '700',
@@ -112,16 +105,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     marginTop: 2,
-  },
-  subCode: {
-    color: '#2E5C8A',
-    fontWeight: '700',
-    fontSize: 14,
-  },
-  subDesc: {
-    color: '#2A2A2A',
-    fontSize: 13,
-    lineHeight: 18,
   },
   iconContainer: {
     backgroundColor: '#1F1F1F',

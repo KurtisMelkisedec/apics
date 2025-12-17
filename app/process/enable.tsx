@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-import { IconSymbol } from '@/components/ui/icon-symbol';
+import { Info } from 'lucide-react-native';
 
 export default function EnableScreen() {
   const { t } = useTranslation();
@@ -17,6 +17,12 @@ export default function EnableScreen() {
     { code: 'sE3', title: t('enable.items.sE3.title') },
     { code: 'sE4', title: t('enable.items.sE4.title') },
     { code: 'sE5', title: t('enable.items.sE5.title') },
+    { code: 'sE6', title: t('enable.items.sE6.title') },
+    { code: 'sE7', title: t('enable.items.sE7.title') },
+    { code: 'sE8', title: t('enable.items.sE8.title') },
+    { code: 'sE9', title: t('enable.items.sE9.title') },
+    { code: 'sE10', title: t('enable.items.sE10.title') },
+    { code: 'sE11', title: t('enable.items.sE11.title') },
   ];
 
   const subItemCodes: Record<string, string[]> = {
@@ -25,6 +31,12 @@ export default function EnableScreen() {
     sE3: ['sE3.1', 'sE3.2', 'sE3.3', 'sE3.4'],
     sE4: ['sE4.1', 'sE4.2', 'sE4.3', 'sE4.4'],
     sE5: ['sE5.1', 'sE5.2', 'sE5.3', 'sE5.4'],
+    sE6: ['sE6.1', 'sE6.2', 'sE6.3', 'sE6.4'],
+    sE7: ['sE7.1', 'sE7.2', 'sE7.3', 'sE7.4'],
+    sE8: ['sE8.1', 'sE8.2', 'sE8.3', 'sE8.4'],
+    sE9: ['sE9.1', 'sE9.2', 'sE9.3', 'sE9.4'],
+    sE10: ['sE10.1', 'sE10.2', 'sE10.3', 'sE10.4'],
+    sE11: ['sE11.1', 'sE11.2', 'sE11.3', 'sE11.4'],
   };
 
   return (
@@ -48,7 +60,7 @@ export default function EnableScreen() {
                   }}
                   style={styles.infoButton}
                 >
-                  <IconSymbol name="info.circle" size={20} color="#9AA0A6" />
+                  <Info size={20} color="#9AA0A6" />
                 </Pressable>
               </View>
             </Pressable>
@@ -68,12 +80,10 @@ export default function EnableScreen() {
         <Modal visible={infoOpen} transparent animationType="fade" onRequestClose={() => setInfoOpen(false)}>
           <View style={styles.modalOverlay}>
             <View style={styles.modalCard}>
-              <Text style={styles.modalTitle}>
-                {infoContent?.code} • {infoContent?.title}
-              </Text>
-              <Text style={styles.modalBody}>{t('enable.infoBody', { title: infoContent?.title })}</Text>
+              <Text style={styles.modalTitle}>{t('enable.definition')}</Text>
+              <Text style={styles.modalBody}>{infoContent?.code && t(`enable.infoDetails.${infoContent.code}`)}</Text>
               <Pressable style={styles.modalClose} onPress={() => setInfoOpen(false)}>
-                <Text style={styles.modalCloseText}>{t('common.close', 'Fermer')}</Text>
+                <Text style={styles.modalCloseText}>{t('common.close')}</Text>
               </Pressable>
             </View>
           </View>
@@ -88,6 +98,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#000',
     padding: 16,
+    paddingBottom: 100,
   },
   row: {
     paddingVertical: 14,

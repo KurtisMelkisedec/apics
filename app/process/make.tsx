@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-import { IconSymbol } from '@/components/ui/icon-symbol';
+import { Info } from 'lucide-react-native';
 
 export default function MakeScreen() {
   const { t } = useTranslation();
@@ -15,16 +15,12 @@ export default function MakeScreen() {
     { code: 'sM1', title: t('make.items.sM1.title') },
     { code: 'sM2', title: t('make.items.sM2.title') },
     { code: 'sM3', title: t('make.items.sM3.title') },
-    { code: 'sM4', title: t('make.items.sM4.title') },
-    { code: 'sM5', title: t('make.items.sM5.title') },
   ];
 
   const subItemCodes: Record<string, string[]> = {
-    sM1: ['sM1.1', 'sM1.2', 'sM1.3', 'sM1.4'],
-    sM2: ['sM2.1', 'sM2.2', 'sM2.3', 'sM2.4'],
-    sM3: ['sM3.1', 'sM3.2', 'sM3.3', 'sM3.4'],
-    sM4: ['sM4.1', 'sM4.2', 'sM4.3', 'sM4.4'],
-    sM5: ['sM5.1', 'sM5.2', 'sM5.3', 'sM5.4'],
+    sM1: ['sM1.1', 'sM1.2', 'sM1.3', 'sM1.4', 'sM1.5', 'sM1.6', 'sM1.7'],
+    sM2: ['sM2.1', 'sM2.2', 'sM2.3', 'sM2.4', 'sM2.5', 'sM2.6', 'sM2.7'],
+    sM3: ['sM3.1', 'sM3.2', 'sM3.3', 'sM3.4', 'sM3.5', 'sM3.6', 'sM3.7', 'sM3.8'],
   };
 
   return (
@@ -48,7 +44,7 @@ export default function MakeScreen() {
                   }}
                   style={styles.infoButton}
                 >
-                  <IconSymbol name="info.circle" size={20} color="#9AA0A6" />
+                  <Info size={20} color="#9AA0A6" />
                 </Pressable>
               </View>
             </Pressable>
@@ -68,12 +64,10 @@ export default function MakeScreen() {
         <Modal visible={infoOpen} transparent animationType="fade" onRequestClose={() => setInfoOpen(false)}>
           <View style={styles.modalOverlay}>
             <View style={styles.modalCard}>
-              <Text style={styles.modalTitle}>
-                {infoContent?.code} • {infoContent?.title}
-              </Text>
-              <Text style={styles.modalBody}>{t('make.infoBody', { title: infoContent?.title })}</Text>
+              <Text style={styles.modalTitle}>{t('make.definition')}</Text>
+              <Text style={styles.modalBody}>{infoContent?.code && t(`make.infoDetails.${infoContent.code}`)}</Text>
               <Pressable style={styles.modalClose} onPress={() => setInfoOpen(false)}>
-                <Text style={styles.modalCloseText}>{t('common.close', 'Fermer')}</Text>
+                <Text style={styles.modalCloseText}>{t('common.close')}</Text>
               </Pressable>
             </View>
           </View>
@@ -88,6 +82,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#000',
     padding: 16,
+    paddingBottom: 100,
   },
   row: {
     paddingVertical: 14,

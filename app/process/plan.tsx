@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-import { IconSymbol } from '@/components/ui/icon-symbol';
+import { Info } from 'lucide-react-native';
 
 export default function PlanScreen() {
   const { t } = useTranslation();
@@ -48,7 +48,7 @@ export default function PlanScreen() {
                   }}
                   style={styles.infoButton}
                 >
-                  <IconSymbol name="info.circle" size={20} color="#9AA0A6" />
+                  <Info size={20} color="#9AA0A6" />
                 </Pressable>
               </View>
             </Pressable>
@@ -69,12 +69,10 @@ export default function PlanScreen() {
         <Modal visible={infoOpen} transparent animationType="fade" onRequestClose={() => setInfoOpen(false)}>
           <View style={styles.modalOverlay}>
             <View style={styles.modalCard}>
-              <Text style={styles.modalTitle}>
-                {infoContent?.code} • {infoContent?.title}
-              </Text>
-              <Text style={styles.modalBody}>{t('plan.infoBody', { title: infoContent?.title })}</Text>
+              <Text style={styles.modalTitle}>{t('plan.definition')}</Text>
+              <Text style={styles.modalBody}>{infoContent?.code && t(`plan.infoDetails.${infoContent.code}`)}</Text>
               <Pressable style={styles.modalClose} onPress={() => setInfoOpen(false)}>
-                <Text style={styles.modalCloseText}>{t('common.close', 'Fermer')}</Text>
+                <Text style={styles.modalCloseText}>{t('common.close')}</Text>
               </Pressable>
             </View>
           </View>
@@ -89,6 +87,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#000', // fond noir comme sur ton image
     padding: 16,
+    paddingBottom: 100,
   },
   row: {
     paddingVertical: 14,

@@ -5,27 +5,31 @@ import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-nati
 
 import { Info } from 'lucide-react-native';
 
-export default function SourceScreen() {
+export default function CostScreen() {
   const { t } = useTranslation();
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [infoOpen, setInfoOpen] = useState<boolean>(false);
   const [infoContent, setInfoContent] = useState<{ code: string; title: string } | null>(null);
 
   const items = [
-    { code: 'sS1', title: t('source.items.sS1.title') },
-    { code: 'sS2', title: t('source.items.sS2.title') },
-    { code: 'sS3', title: t('source.items.sS3.title') },
+    { code: 'CST1', title: t('performance.items.CST1.title') },
+    { code: 'CST2', title: t('performance.items.CST2.title') },
+    { code: 'CST3', title: t('performance.items.CST3.title') },
+    { code: 'CST4', title: t('performance.items.CST4.title') },
+    { code: 'CST5', title: t('performance.items.CST5.title') },
   ];
 
   const subItemCodes: Record<string, string[]> = {
-    sS1: ['sS1.1', 'sS1.2', 'sS1.3', 'sS1.4', 'sS1.5'],
-    sS2: ['sS2.1', 'sS2.2', 'sS2.3', 'sS2.4', 'sS2.5'],
-    sS3: ['sS3.1', 'sS3.2', 'sS3.3', 'sS3.4', 'sS3.5', 'sS3.6', 'sS3.7'],
+    CST1: ['CST1.1', 'CST1.2', 'CST1.3', 'CST1.4'],
+    CST2: ['CST2.1', 'CST2.2', 'CST2.3', 'CST2.4'],
+    CST3: ['CST3.1', 'CST3.2', 'CST3.3', 'CST3.4'],
+    CST4: ['CST4.1', 'CST4.2', 'CST4.3', 'CST4.4'],
+    CST5: ['CST5.1', 'CST5.2', 'CST5.3', 'CST5.4'],
   };
 
   return (
     <>
-      <Stack.Screen options={{ title: t('process.source') }} />
+      <Stack.Screen options={{ title: t('performance.cost') }} />
       <ScrollView style={styles.container}>
         {items.map(item => (
           <View key={item.code}>
@@ -54,7 +58,7 @@ export default function SourceScreen() {
                 {(subItemCodes[item.code] || []).map(subCode => (
                   <View key={subCode} style={styles.subRow}>
                     <Text style={styles.subCode}>{subCode}</Text>
-                    <Text style={styles.subDesc}>{t(`source.subItems.${subCode}.description`)}</Text>
+                    <Text style={styles.subDesc}>{t(`performance.subItems.${subCode}.description`)}</Text>
                   </View>
                 ))}
               </View>
@@ -64,10 +68,12 @@ export default function SourceScreen() {
         <Modal visible={infoOpen} transparent animationType="fade" onRequestClose={() => setInfoOpen(false)}>
           <View style={styles.modalOverlay}>
             <View style={styles.modalCard}>
-              <Text style={styles.modalTitle}>{t('source.definition')}</Text>
-              <Text style={styles.modalBody}>{infoContent?.code && t(`source.infoDetails.${infoContent.code}`)}</Text>
+              <Text style={styles.modalTitle}>
+                {infoContent?.code} • {infoContent?.title}
+              </Text>
+              <Text style={styles.modalBody}>{t('performance.infoBody', { title: infoContent?.title })}</Text>
               <Pressable style={styles.modalClose} onPress={() => setInfoOpen(false)}>
-                <Text style={styles.modalCloseText}>{t('common.close')}</Text>
+                <Text style={styles.modalCloseText}>{t('common.close', 'Close')}</Text>
               </Pressable>
             </View>
           </View>

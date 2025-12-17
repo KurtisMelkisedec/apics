@@ -5,31 +5,35 @@ import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-nati
 
 import { Info } from 'lucide-react-native';
 
-export default function SourceScreen() {
+export default function ReliabilityScreen() {
   const { t } = useTranslation();
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [infoOpen, setInfoOpen] = useState<boolean>(false);
   const [infoContent, setInfoContent] = useState<{ code: string; title: string } | null>(null);
 
   const items = [
-    { code: 'sS1', title: t('source.items.sS1.title') },
-    { code: 'sS2', title: t('source.items.sS2.title') },
-    { code: 'sS3', title: t('source.items.sS3.title') },
+    { code: 'RL.1.1', title: t('performance.items.RL_1_1.title'), expandable: false },
+    { code: 'RL.2.1', title: t('performance.items.RL_2_1.title'), expandable: false },
+    { code: 'RL.2.2', title: t('performance.items.RL_2_2.title'), expandable: false },
+    { code: 'RL.2.3', title: t('performance.items.RL_2_3.title'), expandable: false },
+    { code: 'RL.2.4', title: t('performance.items.RL_2_4.title'), expandable: false },
+    { code: 'RL.3.X', title: t('performance.items.RL_3_X.title'), expandable: true },
   ];
 
   const subItemCodes: Record<string, string[]> = {
-    sS1: ['sS1.1', 'sS1.2', 'sS1.3', 'sS1.4', 'sS1.5'],
-    sS2: ['sS2.1', 'sS2.2', 'sS2.3', 'sS2.4', 'sS2.5'],
-    sS3: ['sS3.1', 'sS3.2', 'sS3.3', 'sS3.4', 'sS3.5', 'sS3.6', 'sS3.7'],
+    'RL.3.X': Array.from({ length: 59 }, (_, i) => `RL.3.1.${i + 1}`),
   };
 
   return (
     <>
-      <Stack.Screen options={{ title: t('process.source') }} />
+      <Stack.Screen options={{ title: t('performance.reliability') }} />
       <ScrollView style={styles.container}>
         {items.map(item => (
           <View key={item.code}>
-            <Pressable style={styles.row} onPress={() => setExpanded(prev => ({ ...prev, [item.code]: !prev[item.code] }))}>
+            <Pressable
+              style={styles.row}
+              onPress={() => item.expandable && setExpanded(prev => ({ ...prev, [item.code]: !prev[item.code] }))}
+            >
               <View>
                 <Text style={styles.code}>{item.code}</Text>
                 <Text style={styles.title}>{item.title}</Text>
@@ -49,12 +53,12 @@ export default function SourceScreen() {
               </View>
             </Pressable>
 
-            {expanded[item.code] && (
+            {item.expandable && expanded[item.code] && (
               <View style={styles.subList}>
                 {(subItemCodes[item.code] || []).map(subCode => (
                   <View key={subCode} style={styles.subRow}>
                     <Text style={styles.subCode}>{subCode}</Text>
-                    <Text style={styles.subDesc}>{t(`source.subItems.${subCode}.description`)}</Text>
+                    <Text style={styles.subDesc}>{t(`performance.subItems.${subCode.replace(/\./g, '_')}.description`)}</Text>
                   </View>
                 ))}
               </View>
@@ -64,8 +68,10 @@ export default function SourceScreen() {
         <Modal visible={infoOpen} transparent animationType="fade" onRequestClose={() => setInfoOpen(false)}>
           <View style={styles.modalOverlay}>
             <View style={styles.modalCard}>
-              <Text style={styles.modalTitle}>{t('source.definition')}</Text>
-              <Text style={styles.modalBody}>{infoContent?.code && t(`source.infoDetails.${infoContent.code}`)}</Text>
+              <Text style={styles.modalTitle}>{t('performance.definition')}</Text>
+              <Text style={styles.modalBody}>
+                {infoContent?.code && t(`performance.infoDetails.${infoContent.code.replace(/\./g, '_')}`)}
+              </Text>
               <Pressable style={styles.modalClose} onPress={() => setInfoOpen(false)}>
                 <Text style={styles.modalCloseText}>{t('common.close')}</Text>
               </Pressable>
